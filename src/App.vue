@@ -1,15 +1,23 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <rrule-generator class="generator" :start="new Date()" :option="options" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RRuleGenerator from './components/RRuleGenerator.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'rrule-generator': RRuleGenerator
+  },
+  computed: {
+    options() {
+      return {
+        showStart: true,
+        showResult: true
+      }
+    }
   }
 }
 </script>
@@ -22,5 +30,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.generator {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 </style>
