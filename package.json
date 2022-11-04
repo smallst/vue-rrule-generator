@@ -1,13 +1,24 @@
 {
   "name": "vue-rrule-generator",
+  "description": "A vuejs rrule-generator base on rrule.js",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "smallst",
+    "email": "smallst@smallst.cn"
+  },
+  "main": ".dist/vue-rrule-generator.common.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name vue-rrule-generator ./src/install.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
