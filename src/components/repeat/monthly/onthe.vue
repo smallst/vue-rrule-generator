@@ -62,10 +62,27 @@ export default {
       }
     },
     day (val) {
-      this.updateRRule({WeekDay: val})
+      let weekday = val;
+      switch(val) {
+          case 7:
+          weekday = [0, 1, 2, 3, 4, 5, 6]
+          break
+          case 8:
+          weekday = [0, 1, 2, 3, 4]
+          break
+          case 9:
+          weekday = [5, 6]
+          break
+      }
+      this.updateRRule({WeekDay: weekday})
     },
     pos (val) {
-      this.updateRRule({Pos: val + 1})
+      let pos = val + 1
+      if (pos === 5) {
+        pos = -1
+      }
+      console.log("??? pos", pos)
+      this.updateRRule({Pos: pos})
     }
   }
 }
