@@ -4,13 +4,9 @@
     <hr>
     <repeat />
     <hr>
-    <end
-      @update-end-state="updateEndState"
-      @update-count="updateCount"
-      @update-date="updateDate"
-    />
+    <end />
     <hr>
-    <result :ruleString="rruleString" :ruleText="rruleText" />
+    <result />
   </div>
 </template>
 
@@ -21,7 +17,7 @@ import End from './end/index.vue'
 import Result from './result/index.vue'
 
 import { RRule } from 'rrule'
-
+import {mapActions} from 'vuex'
 export default {
   name: 'RRuleGenerator',
   props: {
@@ -46,48 +42,18 @@ export default {
       }
       return Object.assign(defaultOption, this.option)
     },
-    rruleString () {
-      return this.rule.toString()
-    },
-    rruleText () {
-      return this.rule.toText()
-    }
-  },
-  data () {
-    return {
-      RRule: {
-        freq: RRule.DAILY,
-        interval: 1,
-        dtstart: this.start
-      },
-      rule: undefined
+    storeRule () {
+      return this.$store.rruleGenerator.state.RRule
     }
   },
   methods: {
-    updateRule () {
-      this.rule = new RRule(this.RRule)
-    },
-    updateEndState (state) {
-      switch(state) {
-          case 'Never':
-          delete this.RRule.count
-          delete this.RRule.until
-          break;
-      }
-      this.updateRule()
-    },
-    updateCount (count) {
-      this.RRule.count = count
-      this.updateRule()
-    },
-    updateDate (date) {
-      delete this.RRule.count
-      this.RRule.until = date
-      this.updateRule()
-    }
+    ...mapActions('rruleGenerator', [
+      'updateRRule'
+    ]),
   },
   created() {
-    this.updateRule()
+    window.RRule = RRule
+    this.updateRRule({Start: this.start})
   }
 }
 </script>

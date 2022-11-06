@@ -1,13 +1,13 @@
 import RRuleGenerator from './components/RRuleGenerator.vue'
+import rruleGeneratorModule from './module.js'
 
 const VueRRuleGenerator = {
-  install(Vue) {
-    Vue.component("vue-rrule-generator", RRuleGenerator)
-  }
-}
+  install(Vue, options = {}) {
+    if(!options.store) console.log('Please provide a store!!')
 
-if(typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(VueRRuleGenerator)
+    Vue.component("vue-rrule-generator", RRuleGenerator)
+    options.store.registerModule('rruleGenerator', rruleGeneratorModule)
+  }
 }
 
 export default VueRRuleGenerator

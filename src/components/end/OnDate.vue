@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import {mapActions} from 'vuex'
 export default {
   name: 'OnDate',
   computed: {
@@ -17,6 +18,11 @@ export default {
       }
     }
   },
+  methods: {
+    ...mapActions('rruleGenerator', [
+      'updateRRule'
+    ])
+  },
   data () {
     return {
       date: new Date(),
@@ -24,11 +30,11 @@ export default {
   },
   watch: {
     date (val) {
-      this.$emit('update-date', val)
+      this.updateRRule({Until: val})
     }
   },
   created() {
-    this.$emit('update-date', this.date)
+      this.updateRRule({Until: this.date})
   }
 }
 </script>

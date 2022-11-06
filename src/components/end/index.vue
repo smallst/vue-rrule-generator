@@ -9,11 +9,9 @@
     <div class="col-sm-6">
       <after
         v-if="endState === 'After'"
-        @update-count="updateCount"
       />
       <on-date
         v-if="endState === 'OnDate'"
-        @update-date="updateDate"
       />
     </div>
   </div>
@@ -23,6 +21,7 @@
 import After from './After.vue'
 import OnDate from './OnDate.vue'
 
+import {mapActions} from 'vuex'
 export default {
   name: 'EndIndex',
   props: {
@@ -42,16 +41,20 @@ export default {
     }
   },
   methods: {
-    updateCount(count) {
-      this.$emit("update-count", count)
-    },
-    updateDate(date) {
-      this.$emit('update-date', date)
-    }
+    ...mapActions('rruleGenerator', [
+      'resetRRule'
+    ])
   },
   watch: {
-    endState (val) {
-      this.$emit('update-end-state', val)
+    endState (val, ov) {
+      switch(ov) {
+          case 'After':
+          this.resetRRule(['Count'])
+          break;
+          case 'OnDate':
+          this.resetRRule(['Until'])
+          break
+      }
     }
   }
 }

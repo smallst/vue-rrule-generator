@@ -10,16 +10,17 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 export default {
   name: 'ResultIndex',
   props: {
-    ruleString: {
-      type: String
-    },
-    ruleText: {
-      type: String
-    }
-  }
+  },
+computed: {
+  ...mapGetters('rruleGenerator', [
+    'ruleString',
+    'ruleText',
+  ])
+}
 }
 </script>
 
