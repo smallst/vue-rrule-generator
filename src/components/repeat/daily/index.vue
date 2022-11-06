@@ -1,12 +1,35 @@
 <template>
-  <div class="hello">
+  <div class="daily mt-3">
+    <form>
+      <div class="form-group row d-flex align-items-sm-center mb-3">
+        <div class="offset-sm-2">
+          <interval unit="Day(s)" />
+        </div>
+      </div>
+    </form>
   </div>
 </template>
 
 <script>
+import Interval from '../interval.vue'
+
+import { mapActions } from 'vuex'
+import {RRule} from 'rrule'
 export default {
   name: 'DailyIndex',
   props: {
+  },
+  components: {
+    Interval
+  },
+  methods: {
+    ...mapActions('rruleGenerator', [
+      'updateRRule',
+      'resetRRule'
+    ])
+  },
+  created() {
+    this.updateRRule({Freq: RRule.DAILY})
   }
 }
 </script>

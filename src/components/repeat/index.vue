@@ -57,11 +57,16 @@ export default {
     repeatState (val, ov) {
       switch(ov) {
         case 'Yearly':
-        this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos'])
-        break
+          this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos'])
+          break
         case 'Monthly':
-        this.resetRRule(['MonthDay', 'WeekDay', 'Pos'])
-        break
+          this.resetRRule(['MonthDay', 'WeekDay', 'Pos'])
+          break
+        case 'Weekly':
+          this.resetRRule(['WeekDay'])
+          break
+        case 'Daily':
+          break
       }
     }
   }
