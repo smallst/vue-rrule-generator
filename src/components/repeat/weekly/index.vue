@@ -2,14 +2,10 @@
   <div class="weekly mt-3">
     <form>
       <div class="form-group row d-flex align-items-sm-center mb-3">
-        <div class="offset-sm-2">
-          <interval unit="Week(s)" />
-        </div>
+        <interval unit="Week(s)" class="col-sm-offset-2" />
       </div>
       <div class="form-group row d-flex align-items-sm-center">
-        <div class="offset-sm-2">
-          <on />
-        </div>
+        <on class="col-sm-offset-2" />
       </div>
 
     </form>
@@ -42,5 +38,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+
 </style>

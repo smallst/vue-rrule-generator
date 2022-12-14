@@ -1,15 +1,15 @@
 <template>
-  <div class="monthly-onthe col-sm-9 row">
+  <div class="monthly-onthe col-sm-9 row  d-flex align-items-sm-center">
     <div class="col-sm-1">
       on the
     </div>
     <div class="col-sm-2">
-      <select class="form-select" name="pos" v-model="pos" :disabled="state !== 'onthe'">
+      <select class="form-control" name="pos" v-model="pos" :disabled="state !== 'onthe'">
         <option v-for="(o, index) in orders" :value="index" :key="o">{{o}}</option>
       </select>
     </div>
     <div class="col-sm-3">
-      <select class="form-select" name="day" v-model="day" :disabled="state !== 'onthe'">
+      <select class="form-control" name="day" v-model="day" :disabled="state !== 'onthe'">
         <option v-for="(d, index) in weekDays" :value="index" :key="d">{{d}}</option>
       </select>
     </div>

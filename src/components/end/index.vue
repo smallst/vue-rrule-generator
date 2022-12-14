@@ -2,7 +2,7 @@
   <div class="end row">
     <label for="end" class="col-sm-2 col-form-label">End</label>
     <div class="col-sm-4">
-      <select class="form-select" name="end" v-model="endState">
+      <select class="form-control" name="end" v-model="endState">
         <option v-for="op in endOptions" :value="op" :key="op">{{op}}</option>
       </select>
     </div>

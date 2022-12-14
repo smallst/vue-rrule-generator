@@ -1,10 +1,8 @@
 <template>
   <div class="daily mt-3">
     <form>
-      <div class="form-group row d-flex align-items-sm-center mb-3">
-        <div class="offset-sm-2">
-          <interval unit="Day(s)" />
-        </div>
+      <div class="form-group row mb-3">
+        <interval class="col-sm-offset-2" unit="Day(s)" />
       </div>
     </form>
   </div>

@@ -2,18 +2,16 @@
   <div class="monthly mt-3">
     <form>
       <div class="form-group row d-flex align-items-sm-center mb-3">
-        <div class="offset-sm-2">
-          <interval unit="Month(s)" />
-        </div>
+        <interval class="col-sm-offset-2" unit="Month(s)" />
       </div>
       <div class="form-group row d-flex align-items-sm-center mb-3">
-        <div class="col-sm-1 offset-sm-2">
+        <div class="col-sm-1 col-sm-offset-2">
           <input class="form-check-input" type="radio" v-model="monthlyState" value="on"/>
         </div>
         <on :class="{'opacity-50': monthlyState === 'onthe'}" :state="monthlyState" />
       </div>
       <div class="form-group row d-flex align-items-sm-center">
-        <div class="col-sm-1 offset-sm-2">
+        <div class="col-sm-1 col-sm-offset-2">
           <input class="form-check-input" type="radio" v-model="monthlyState" value="onthe"/>
         </div>
         <on-the :class="{'opacity-50': monthlyState === 'on'}" :state="monthlyState" />

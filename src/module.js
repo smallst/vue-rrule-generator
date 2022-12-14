@@ -25,55 +25,55 @@ export default {
   },
   mutations: {
     setStart (state, start) {
-      state.RRule.dtstart = start
+      state.RRule = { ...state.RRule, dtstart: start}
     },
     setCount (state, count) {
-      state.RRule.count = count
+      state.RRule = { ...state.RRule, count: count}
     },
     unsetCount (state) {
-      delete state.RRule.count
+      state.RRule = { ...state.RRule, count: undefined}
     },
     setUntil (state, until) {
-      state.RRule.until = until
+      state.RRule = { ...state.RRule, until: until}
     },
     unsetUntil (state) {
-      delete state.RRule.until
+      state.RRule = { ...state.RRule, until: undefined}
     },
     setMonth (state, month) {
-      state.RRule.bymonth = month
+      state.RRule = { ...state.RRule, bymonth: month}
     },
     unsetMonth (state) {
-      delete state.RRule.bymonth
+      state.RRule = { ...state.RRule, bymonth: undefined}
     },
     setMonthDay (state, day) {
-      state.RRule.bymonthday = day
+      state.RRule = { ...state.RRule, bymonthday: day}
     },
     unsetMonthDay (state) {
-      delete state.RRule.bymonthday
+      state.RRule = { ...state.RRule, bymonthday: undefined}
     },
     setFreq (state,  freq) {
-      state.RRule.freq = freq
+      state.RRule = { ...state.RRule, freq: freq}
     },
     unsetFreq (state) {
-      delete state.RRule.freq
+      state.RRule = { ...state.RRule, freq: undefined}
     },
     setInterval (state, interval) {
-      state.RRule.interval = interval
+      state.RRule = { ...state.RRule, interval: interval}
     },
     unsetInterval (state) {
-      delete state.RRule.interval
+      state.RRule = { ...state.RRule, interval: undefined}
     },
     setPos (state, pos) {
-      state.RRule.bysetpos = pos
+      state.RRule = { ...state.RRule, bysetpos: pos }
     },
     unsetPos (state) {
-      delete state.RRule.bysetpos
+      state.RRule = { ...state.RRule, bysetpos: undefined}
     },
     setWeekDay (state, day) {
-      state.RRule.byweekday = day
+      state.RRule = { ...state.RRule, byweekday: day}
     },
     unsetWeekDay (state) {
-      delete state.RRule.byweekday
+      state.RRule = { ...state.RRule, byweekday: undefined}
     },
   },
   getters: {

@@ -1,6 +1,6 @@
 <template>
   <div class="weekly-on col-sm-9 row">
-    <div class="btn-group" role="group">
+    <div class="btn-group d-flex" role="group">
       <template
         v-for="(d, index) in weekDays"
       >
@@ -14,7 +14,8 @@
           @click="toggle(index)"
         />
         <label
-          class="btn btn-outline-primary my-label"
+          class="btn my-label"
+          :class="selectDays.includes(index) ? 'btn-primary': 'btn-default'"
           :for="d"
           :key="`label-${d}`"
         >

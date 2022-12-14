@@ -13,10 +13,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library": "vue-cli-service build --target lib --name vue2-rrule-generator ./src/install.js",
+    "build-library": "vue-cli-service build --target lib --name vue2-rrule-generator ./src/install.js"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
+    "bootstrap": "3.3",
     "core-js": "^3.8.3",
     "moment": "^2.29.4",
     "rrule": "^2.7.1",
@@ -27,6 +27,8 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
     "vue-template-compiler": "^2.6.14"
   }
 }

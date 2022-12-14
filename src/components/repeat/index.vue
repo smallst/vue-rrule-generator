@@ -3,7 +3,7 @@
     <div class="row">
       <label for="repeat" class="col-sm-2 col-form-label">Repeat</label>
       <div class="col-sm-4">
-        <select class="form-select" name="repeat" v-model="repeatState">
+        <select class="form-control" name="repeat" v-model="repeatState">
           <option v-for="op in repeatOptions" :value="op" :key="op">{{op}}</option>
         </select>
       </div>

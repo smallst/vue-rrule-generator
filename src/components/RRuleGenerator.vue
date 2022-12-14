@@ -59,10 +59,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import '~bootstrap/dist/css/bootstrap.css';
-
-.rrule-generator {
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "./global.css";
+.rrule-generator{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 </style>

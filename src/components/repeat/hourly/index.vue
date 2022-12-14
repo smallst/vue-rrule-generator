@@ -1,10 +1,8 @@
 <template>
   <div class="hourly mt-3">
     <form>
-      <div class="form-group row d-flex align-items-sm-center mb-3">
-        <div class="offset-sm-2">
-          <interval unit="Hour(s)" />
-        </div>
+      <div class="form-group rowmb-3">
+        <interval class="col-sm-offset-2" unit="Hour(s)" />
       </div>
     </form>
   </div>

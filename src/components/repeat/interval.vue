@@ -1,5 +1,5 @@
 <template>
-  <div class="repeat-interval col-sm-9 row">
+  <div class="repeat-interval col-sm-9 row d-flex align-items-sm-center">
     <div class="col-sm-1">
       Every
     </div>
