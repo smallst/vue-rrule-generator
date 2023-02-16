@@ -1,12 +1,12 @@
 <template>
   <div class="repeat-interval col-sm-9 row d-flex align-items-sm-center">
-    <div class="col-sm-1">
+    <div class="col-sm-2">
       Every
     </div>
     <div class="col-sm-2">
       <input class="form-control" name="interval" type="number" min="1" v-model="interval" />
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
       {{ unit }}
     </div>
   </div>

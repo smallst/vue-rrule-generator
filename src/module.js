@@ -20,7 +20,8 @@ export default {
         // byhour: undefined,
         // byminute: undefined,
         // bysecond: undefined
-      }
+      },
+      selectDays: []
     }
   },
   mutations: {
@@ -75,8 +76,19 @@ export default {
     unsetWeekDay (state) {
       state.RRule = { ...state.RRule, byweekday: undefined}
     },
+    toggleSelectDays (state, d) {
+      const index = state.selectDays.indexOf(d)
+      if(index !== -1) {
+        state.selectDays.splice(index, 1)
+      } else {
+        state.selectDays.push(d)
+      }
+    }
   },
   getters: {
+    selectDays (state) {
+      return state.selectDays
+    },
     rule (state) {
       return new RRule(state.RRule)
     },

@@ -1,6 +1,6 @@
 <template>
   <div class="monthly-onthe col-sm-9 row  d-flex align-items-sm-center">
-    <div class="col-sm-1">
+    <div class="col-sm-2">
       on the
     </div>
     <div class="col-sm-2">

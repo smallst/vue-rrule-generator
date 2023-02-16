@@ -29,32 +29,28 @@
 <script>
 import { WEEKDAYS } from '@/constants.js'
 
-import { mapActions } from 'vuex'
+import { mapGetters, mapActions, mapMutations } from 'vuex'
 export default {
   name: 'WeeklyOn',
   props: {
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'selectDays'
+    ]),
     weekDays () {
       return WEEKDAYS
-    }
-  },
-  data () {
-    return {
-      selectDays: [0]
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
     ]),
+    ...mapMutations('rruleGenerator', [
+      'toggleSelectDays'
+    ]),
     toggle (d) {
-      const index = this.selectDays.indexOf(d)
-      if(index !== -1) {
-        this.selectDays.splice(index, 1)
-      } else {
-        this.selectDays.push(d)
-      }
+      this.toggleSelectDays(d)
       this.updateRRule({'WeekDay': this.selectDays})
     }
   },
