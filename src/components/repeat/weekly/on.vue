@@ -58,7 +58,7 @@ export default {
   },
   created() {
     if(this.initFromString) {
-      this.options.byweekday.forEach(d => this.toggleSelectDays(d.weekday))
+      this.options.byweekday?.forEach(d => this.toggleSelectDays(d.weekday))
     } else {
       this.updateRRule({'WeekDay': this.selectDays})
     }
