@@ -27,7 +27,7 @@
 <script>
 import { MONTHS, DAYS } from '@/constants.js'
 
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'YearlyOnThe',
   props: {
@@ -36,6 +36,10 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ]),
     months () {
       return MONTHS
     },
@@ -62,44 +66,83 @@ export default {
     return {
       month: 0,
       day: 1,
-      pos: 0
+      pos: 0,
+      initing: false
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
-    ])
+    ]),
+    init () {
+      this.initing = true
+      this.month = this.options.bymonth - 1
+      const weekday = this.options.byweekday
+      if(Array.isArray(weekday)) {
+        switch(weekday.length) {
+          case 7: this.day = 7; break;
+          case 5: this.day = 8; break;
+          case 2: this.day = 9; break;
+          case 1: this.day = weekday[0].weekday
+        }
+      }
+      const pos = this.options.bysetpos
+      if(pos === -1) {
+        this.pos = 4
+      } else {
+        this.pos = pos -1
+      }
+
+      this.$nextTick(() => this.initing = false)
+    }
+  },
+  created () {
+    if(this.state === 'onthe') {
+      if (this.initFromString) {
+        this.init()
+      }
+    }
   },
   watch: {
     state (val) {
       if(val == 'onthe') {
-        this.updateRRule({Month: this.bymonth, WeekDay: this.day, Pos: this.bysetpos})
+        if (this.initFromString) {
+          this.init()
+        } else {
+          this.updateRRule({Month: this.bymonth, WeekDay: this.day, Pos: this.bysetpos})
+        }
       }
     },
     month (val) {
-      this.updateRRule({Month: val + 1})
+      if(!this.initing) {
+        this.updateRRule({Month: val + 1})
+      }
     },
     day (val) {
+      if(!this.initing) {
       let weekday = val;
       switch(val) {
-          case 7:
+        case 7:
           weekday = [0, 1, 2, 3, 4, 5, 6]
           break
-          case 8:
+        case 8:
           weekday = [0, 1, 2, 3, 4]
           break
-          case 9:
+        case 9:
           weekday = [5, 6]
           break
       }
       this.updateRRule({WeekDay: weekday})
+      }
     },
     pos (val) {
+      if(!this.initing) {
       let pos = val + 1
       if (pos === 5) {
         pos = -1
       }
       this.updateRRule({Pos: pos})
+      }
     }
   }
 }

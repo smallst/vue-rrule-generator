@@ -13,13 +13,19 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'MonthlyInterval',
   props: {
     unit: {
       type: String
     }
+  },
+  computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ])
   },
   methods: {
     ...mapActions('rruleGenerator', [
@@ -38,7 +44,11 @@ export default {
     }
   },
   created() {
-    this.updateRRule({Interval: this.interval})
+    if(this.initFromString) {
+      this.interval = this.options.interval
+    } else {
+      this.updateRRule({Interval: this.interval})
+    }
   }
 }
 </script>

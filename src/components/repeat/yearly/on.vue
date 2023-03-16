@@ -20,7 +20,7 @@
 import { MONTHS } from '@/constants.js'
 
 import moment from 'moment'
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'YearlyOn',
   props: {
@@ -29,6 +29,10 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ]),
     months () {
       return MONTHS
     },
@@ -41,6 +45,7 @@ export default {
   },
   data () {
     return {
+      initing: false,
       month: 0,
       day: 1
     }
@@ -48,23 +53,43 @@ export default {
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
-    ])
+    ]),
+    init () {
+      this.initing = true
+      this.day = this.options.bymonthday
+      this.month = this.options.bymonth - 1
+      this.$nextTick(() => this.initing = false)
+    }
   },
   watch: {
     state (val) {
       if(val == 'on') {
-        this.updateRRule({Month: this.bymonth, MonthDay: this.day})
+        if (this.initFromString) {
+          this.init()
+        } else {
+          this.updateRRule({Month: this.bymonth, MonthDay: this.day})
+        }
       }
     },
     month (val) {
+      if(!this.initing){
         this.updateRRule({Month: val+1})
+      }
     },
     day (val) {
+      if(!this.initing){
         this.updateRRule({MonthDay: val})
+      }
     }
   },
   created() {
-    this.updateRRule({Month: this.bymonth, MonthDay: this.day})
+    if(this.state === 'on') {
+      if(this.initFromString) {
+        this.init()
+      } else {
+        this.updateRRule({Month: this.bymonth, MonthDay: this.day})
+      }
+    }
   }
 }
 </script>

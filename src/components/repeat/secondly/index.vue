@@ -11,7 +11,7 @@
 <script>
 import Interval from '../interval.vue'
 
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import {RRule} from 'rrule'
 export default {
   name: 'SecondlyIndex',
@@ -20,6 +20,11 @@ export default {
   components: {
     Interval
   },
+  computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+    ])
+  },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule',
@@ -27,7 +32,9 @@ export default {
     ])
   },
   created() {
-    this.updateRRule({Freq: RRule.SECONDLY})
+    if(!this.initFromString) {
+      this.updateRRule({Freq: RRule.SECONDLY})
+    }
   }
 }
 </script>

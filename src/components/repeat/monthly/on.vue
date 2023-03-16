@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'MonthlyOn',
   props: {
@@ -21,6 +21,10 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ])
   },
   data () {
     return {
@@ -35,15 +39,23 @@ export default {
   watch: {
     state (val) {
       if(val == 'on') {
-        this.updateRRule({MonthDay: this.day})
+        if(this.initFromString) {
+          this.day = this.options.bymonthday
+        } else {
+          this.updateRRule({MonthDay: this.day})
+        }
       }
     },
     day (val) {
-        this.updateRRule({MonthDay: val})
+      this.updateRRule({MonthDay: val})
     }
   },
   created() {
-    this.updateRRule({MonthDay: this.day})
+    if(this.initFromString) {
+      this.day = this.options.bymonthday
+    } else {
+      this.updateRRule({MonthDay: this.day})
+    }
   }
 }
 </script>

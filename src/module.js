@@ -21,7 +21,8 @@ export default {
         // byminute: undefined,
         // bysecond: undefined
       },
-      selectDays: []
+      selectDays: [],
+      initFromString: false
     }
   },
   mutations: {
@@ -83,6 +84,13 @@ export default {
       } else {
         state.selectDays.push(d)
       }
+    },
+    parseString (state, str) {
+      state.initFromString = true
+      state.RRule = RRule.parseString(str)
+    },
+    resetInit (state) {
+      state.initFromString = false
     }
   },
   getters: {
@@ -92,21 +100,51 @@ export default {
     rule (state) {
       return new RRule(state.RRule)
     },
+    options (state) {
+      return state.RRule
+    },
+    initFromString (state) {
+      return state.initFromString
+    },
     ruleString (state, getters) {
       return getters.rule.toString()
     },
     ruleText (state, getters) {
       return getters.rule.toText()
-    }
+    },
+    query: (state, getters) => (key) => {
+      switch(key) {
+      case 'Start': return getters.options.dtstart
+      case 'Count': return getters.options.count
+      case 'Until': return getters.options.until
+      case 'Month': return getters.options.bymonth
+      case 'MonthDay': return getters.options.bymonthday
+      case 'Freq': return getters.options.freq
+      case 'Interval': return getters.options.interval
+      case 'Pos': return getters.options.bysetpos
+      case 'WeekDay': return getters.options.byweekday
+      default: return undefined
+      }
+    },
   },
   actions: {
-    updateRRule ({ commit }, update) {
+   updateRRule ({ commit, getters}, update) {
+     let change = false
       for(const [key, value] of Object.entries(update)) {
-        commit('set' + key, value)
+        if(getters.query(key) !== value) {
+          change = true
+          commit('set' + key, value)
+        }
       }
+     if(change) {
+       commit('resetInit')
+     }
     },
     resetRRule ({ commit }, updates) {
       updates.forEach(key => commit('unset' + key))
+    },
+    importRRule ({ commit }, rruleString) {
+      commit('parseString', rruleString)
     }
   }
 }

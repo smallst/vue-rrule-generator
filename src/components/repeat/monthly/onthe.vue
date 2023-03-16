@@ -19,7 +19,7 @@
 <script>
 import { DAYS } from '@/constants.js'
 
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'MonthlyOnThe',
   props: {
@@ -28,6 +28,10 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ]),
     weekDays () {
       return DAYS
     },
@@ -47,21 +51,51 @@ export default {
   data () {
     return {
       day: 1,
-      pos: 0
+      pos: 0,
+      initing: false
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
-    ])
+    ]),
+    init() {
+      this.initing = true
+      const weekday = this.options.byweekday
+      if(Array.isArray(weekday)) {
+        switch(weekday.length) {
+          case 7: this.day = 7; break;
+          case 5: this.day = 8; break;
+          case 2: this.day = 9; break;
+          case 1: this.day = weekday[0].weekday
+        }
+      }
+      const pos = this.options.bysetpos
+      if(pos === -1) {
+        this.pos = 4
+      } else {
+        this.pos = pos -1
+      }
+      this.$nextTick(() => this.initing = false)
+    }
+  },
+  created () {
+    if (this.initFromString) {
+      this.init()
+    }
   },
   watch: {
     state (val) {
       if(val == 'onthe') {
-        this.updateRRule({WeekDay: this.day, Pos: this.bysetpos})
+        if (this.initFromString) {
+          this.init()
+        } else {
+          this.updateRRule({WeekDay: this.day, Pos: this.bysetpos})
+        }
       }
     },
     day (val) {
+      if(this.initing) return
       let weekday = val;
       switch(val) {
           case 7:
@@ -77,11 +111,11 @@ export default {
       this.updateRRule({WeekDay: weekday})
     },
     pos (val) {
+      if(this.initing) return
       let pos = val + 1
       if (pos === 5) {
         pos = -1
       }
-      console.log("??? pos", pos)
       this.updateRRule({Pos: pos})
     }
   }

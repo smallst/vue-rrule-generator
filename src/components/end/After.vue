@@ -10,13 +10,19 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex'
+import {mapActions, mapGetters} from 'vuex'
 export default {
   name: 'EndAfter',
   data () {
     return {
       count: 1,
     }
+  },
+  computed: {
+    ...mapGetters('rruleGenerator', [
+      'options',
+      'initFromString'
+    ])
   },
   methods: {
     ...mapActions('rruleGenerator', [
@@ -29,7 +35,9 @@ export default {
     }
   },
   created () {
-    this.updateRRule({Count: this.count})
+    if(this.initFromString) {
+      this.count = this.options.count
+    }
   }
 }
 </script>

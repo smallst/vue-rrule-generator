@@ -29,7 +29,7 @@ import Hourly from './hourly/index.vue'
 import Minutely from './minutely/index.vue'
 import Secondly from './secondly/index.vue'
 
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'RepeatIndex',
   props: {
@@ -44,6 +44,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'options'
+    ]),
     repeatOptions () {
       return ['Yearly', 'Monthly', 'Weekly', 'Daily', 'Hourly', 'Minutely', 'Secondly']
     }
@@ -52,6 +55,9 @@ export default {
     ...mapActions('rruleGenerator', [
       'resetRRule'
     ])
+  },
+  created () {
+    this.repeatState = this.repeatOptions[this.options.freq]
   },
   watch: {
     repeatState (val, ov) {

@@ -27,6 +27,10 @@ export default {
     start: {
       type: Date
     },
+    rrule: {
+      type: String,
+      default: ''
+    }
   },
   components: {
     Start,
@@ -47,12 +51,22 @@ export default {
   },
   methods: {
     ...mapActions('rruleGenerator', [
-      'updateRRule'
+      'updateRRule',
+      'importRRule'
     ]),
   },
   created() {
     window.RRule = RRule
-    this.updateRRule({Start: this.start})
+    if (this.rrule) {
+      this.importRRule(this.rrule)
+    } else {
+      this.updateRRule({Start: this.start})
+    }
+  },
+  watch: {
+    start (v) {
+      this.updateRRule({Start: v})
+    }
   }
 }
 </script>

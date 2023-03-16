@@ -36,7 +36,9 @@ export default {
   },
   computed: {
     ...mapGetters('rruleGenerator', [
-      'selectDays'
+      'selectDays',
+      'initFromString',
+      'options'
     ]),
     weekDays () {
       return WEEKDAYS
@@ -55,7 +57,11 @@ export default {
     }
   },
   created() {
-    this.updateRRule({'WeekDay': this.selectDays})
+    if(this.initFromString) {
+      this.options.byweekday.forEach(d => this.toggleSelectDays(d.weekday))
+    } else {
+      this.updateRRule({'WeekDay': this.selectDays})
+    }
   }
 }
 </script>

@@ -21,7 +21,7 @@
 import After from './After.vue'
 import OnDate from './OnDate.vue'
 
-import {mapActions} from 'vuex'
+import {mapActions, mapGetters} from 'vuex'
 export default {
   name: 'EndIndex',
   props: {
@@ -36,6 +36,10 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ]),
     endOptions () {
       return ['Never', 'After', 'OnDate']
     }
@@ -44,6 +48,17 @@ export default {
     ...mapActions('rruleGenerator', [
       'resetRRule'
     ])
+  },
+  created () {
+    if(this.initFromString) {
+      if(this.options.until) {
+        this.endState = 'OnDate'
+      } else if(this.options.count) {
+        this.endState = 'After'
+      } else {
+        this.endState = 'Never'
+      }
+    }
   },
   watch: {
     endState (val, ov) {

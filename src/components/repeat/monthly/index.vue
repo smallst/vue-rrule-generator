@@ -26,7 +26,7 @@ import Interval from '../interval.vue'
 import On from './on.vue'
 import OnThe from './onthe.vue'
 
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import {RRule} from 'rrule'
 export default {
   name: 'MonthlyIndex',
@@ -34,6 +34,12 @@ export default {
   },
   components: {
     On, OnThe, Interval
+  },
+  computed: {
+    ...mapGetters('rruleGenerator', [
+      'initFromString',
+      'options'
+    ])
   },
   methods: {
     ...mapActions('rruleGenerator', [
@@ -59,7 +65,15 @@ export default {
     }
   },
   created() {
-    this.updateRRule({Freq: RRule.MONTHLY})
+    if(this.initFromString) {
+      if(this.options.bymonthday) {
+        this.monthlyState = 'on'
+      } else {
+        this.monthlyState = 'onthe'
+      }
+    } else {
+      this.updateRRule({Freq: RRule.MONTHLY})
+    }
   }
 }
 </script>
