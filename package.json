@@ -1,12 +1,13 @@
 {
   "name": "vue2-rrule-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "author": {
     "name": "smallst",
     "email": "smallst@smallst.cn"
   },
   "main": "dist/vue2-rrule-generator.common.js",
+  "module": "dist/vue2-rrule-generator.common.js",
   "files": [
     "dist/*"
   ],
