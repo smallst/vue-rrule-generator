@@ -1,12 +1,14 @@
 <template>
   <div class="rrule-generator border rounded">
-    <start v-if="showStart" :start="start" />
-    <hr>
-    <repeat />
-    <hr>
-    <end />
-    <hr>
-    <result v-if="showResult" />
+    <div class="bootstrap-scope">
+      <start v-if="showStart" :start="start" />
+      <hr>
+      <repeat />
+      <hr>
+      <end />
+      <hr>
+      <result v-if="showResult" />
+    </div>
   </div>
 </template>
 
@@ -72,9 +74,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style src="./global.css" />
 <style scoped>
-@import "~bootstrap/dist/css/bootstrap.css";
-@import "./global.css";
 .rrule-generator{
   padding-top: 20px;
   padding-bottom: 20px;
