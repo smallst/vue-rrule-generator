@@ -1,7 +1,7 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 5897:
+/***/ 863:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,17 +11,19 @@ __webpack_require__.d(__webpack_exports__, {
   "Z": function() { return /* binding */ RRuleGenerator; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=template&id=6b343c5e&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=template&id=39b598d1&scoped=true&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
     staticClass: "rrule-generator border rounded"
+  }, [_c('div', {
+    staticClass: "bootstrap-scope"
   }, [_vm.showStart ? _c('start', {
     attrs: {
       "start": _vm.start
     }
-  }) : _vm._e(), _c('hr'), _c('repeat'), _c('hr'), _c('end'), _c('hr'), _vm.showResult ? _c('result') : _vm._e()], 1);
+  }) : _vm._e(), _c('hr'), _c('repeat'), _c('hr'), _c('end'), _c('hr'), _vm.showResult ? _c('result') : _vm._e()], 1)]);
 };
 var staticRenderFns = [];
 
@@ -3448,16 +3450,17 @@ var result_component = normalizeComponent(
 });
 ;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_RRuleGeneratorvue_type_script_lang_js_ = (RRuleGeneratorvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=style&index=0&id=6b343c5e&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=style&index=1&id=39b598d1&prod&scoped=true&lang=css&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue?vue&type=style&index=0&id=6b343c5e&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue?vue&type=style&index=1&id=39b598d1&prod&scoped=true&lang=css&
 
 ;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue
 
 
 
 ;
+
 
 
 /* normalize component */
@@ -3468,7 +3471,7 @@ var RRuleGenerator_component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "6b343c5e",
+  "39b598d1",
   null
   
 )
@@ -27256,7 +27259,7 @@ if (typeof window !== 'undefined') {
 /* harmony default export */ var setPublicPath = (null);
 
 ;// CONCATENATED MODULE: ./src/install.js
-const RRuleGenerator = (__webpack_require__(5897)/* ["default"] */ .Z);
+const RRuleGenerator = (__webpack_require__(863)/* ["default"] */ .Z);
 const rruleGeneratorModule = (__webpack_require__(2188)/* ["default"] */ .Z);
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
