@@ -59,3 +59,4 @@ methods: {
   margin-right: 20%;
 }
 </style>
+<style src="./assets/bootstrap-scope.css" />
