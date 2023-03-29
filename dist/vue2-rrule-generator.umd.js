@@ -11,7 +11,7 @@
 return /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 1692:
+/***/ 6289:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21,7 +21,7 @@ __webpack_require__.d(__webpack_exports__, {
   "Z": function() { return /* binding */ RRuleGenerator; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=template&id=39b598d1&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=template&id=fdfba722&scoped=true&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -37,8 +37,8 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/start/index.vue?vue&type=template&id=f9b5a650&scoped=true&
-var startvue_type_template_id_f9b5a650_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/start/index.vue?vue&type=template&id=9c80d3f0&
+var startvue_type_template_id_9c80d3f0_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -62,7 +62,7 @@ var startvue_type_template_id_f9b5a650_scoped_true_render = function render() {
     }
   })])]);
 };
-var startvue_type_template_id_f9b5a650_scoped_true_staticRenderFns = [];
+var startvue_type_template_id_9c80d3f0_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/start/index.vue?vue&type=script&lang=js&
 /* harmony default export */ var startvue_type_script_lang_js_ = ({
@@ -188,18 +188,18 @@ function normalizeComponent(
 ;
 var component = normalizeComponent(
   components_startvue_type_script_lang_js_,
-  startvue_type_template_id_f9b5a650_scoped_true_render,
-  startvue_type_template_id_f9b5a650_scoped_true_staticRenderFns,
+  startvue_type_template_id_9c80d3f0_render,
+  startvue_type_template_id_9c80d3f0_staticRenderFns,
   false,
   null,
-  "f9b5a650",
+  null,
   null
   
 )
 
 /* harmony default export */ var start = (component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/index.vue?vue&type=template&id=6bb5cbbf&scoped=true&
-var repeatvue_type_template_id_6bb5cbbf_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/index.vue?vue&type=template&id=22a01a51&
+var repeatvue_type_template_id_22a01a51_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -246,10 +246,10 @@ var repeatvue_type_template_id_6bb5cbbf_scoped_true_render = function render() {
     staticClass: "row"
   }, [_vm.repeatState === 'Yearly' ? _c('yearly') : _vm._e(), _vm.repeatState === 'Monthly' ? _c('monthly') : _vm._e(), _vm.repeatState === 'Weekly' ? _c('weekly') : _vm._e(), _vm.repeatState === 'Daily' ? _c('daily') : _vm._e(), _vm.repeatState === 'Hourly' ? _c('hourly') : _vm._e(), _vm.repeatState === 'Minutely' ? _c('minutely') : _vm._e(), _vm.repeatState === 'Secondly' ? _c('secondly') : _vm._e()], 1)]);
 };
-var repeatvue_type_template_id_6bb5cbbf_scoped_true_staticRenderFns = [];
+var repeatvue_type_template_id_22a01a51_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/index.vue?vue&type=template&id=037d6502&scoped=true&
-var yearlyvue_type_template_id_037d6502_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/index.vue?vue&type=template&id=aaaa0990&
+var yearlyvue_type_template_id_aaaa0990_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -325,10 +325,10 @@ var yearlyvue_type_template_id_037d6502_scoped_true_render = function render() {
     }
   })], 1)])]);
 };
-var yearlyvue_type_template_id_037d6502_scoped_true_staticRenderFns = [];
+var yearlyvue_type_template_id_aaaa0990_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/interval.vue?vue&type=template&id=5add353a&scoped=true&
-var intervalvue_type_template_id_5add353a_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/interval.vue?vue&type=template&id=138cbf7a&
+var intervalvue_type_template_id_138cbf7a_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -363,7 +363,7 @@ var intervalvue_type_template_id_5add353a_scoped_true_render = function render()
     staticClass: "col-sm-2"
   }, [_vm._v(" " + _vm._s(_vm.unit) + " ")])]);
 };
-var intervalvue_type_template_id_5add353a_scoped_true_staticRenderFns = [];
+var intervalvue_type_template_id_138cbf7a_staticRenderFns = [];
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
 var es_array_push = __webpack_require__(7658);
@@ -1491,31 +1491,20 @@ var index = {
     }
   },
   computed: {
-    ...mapGetters('rruleGenerator', ['initFromString', 'options'])
+    ...mapGetters('rruleGenerator', ['initFromString', 'options']),
+    interval: {
+      get() {
+        return this.options.interval || 1;
+      },
+      set(val) {
+        this.updateRRule({
+          Interval: val
+        });
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  data() {
-    return {
-      interval: 1
-    };
-  },
-  watch: {
-    interval(val) {
-      this.updateRRule({
-        Interval: val
-      });
-    }
-  },
-  created() {
-    if (this.initFromString) {
-      this.interval = this.options.interval;
-    } else {
-      this.updateRRule({
-        Interval: this.interval
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/interval.vue?vue&type=script&lang=js&
@@ -1530,18 +1519,18 @@ var index = {
 ;
 var interval_component = normalizeComponent(
   repeat_intervalvue_type_script_lang_js_,
-  intervalvue_type_template_id_5add353a_scoped_true_render,
-  intervalvue_type_template_id_5add353a_scoped_true_staticRenderFns,
+  intervalvue_type_template_id_138cbf7a_render,
+  intervalvue_type_template_id_138cbf7a_staticRenderFns,
   false,
   null,
-  "5add353a",
+  null,
   null
   
 )
 
 /* harmony default export */ var interval = (interval_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/on.vue?vue&type=template&id=e3141ef6&scoped=true&
-var onvue_type_template_id_e3141ef6_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/on.vue?vue&type=template&id=f69415f2&
+var onvue_type_template_id_f69415f2_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -1614,7 +1603,7 @@ var onvue_type_template_id_e3141ef6_scoped_true_render = function render() {
     }, [_vm._v(_vm._s(d))]);
   }), 0)])]);
 };
-var onvue_type_template_id_e3141ef6_scoped_true_staticRenderFns = [];
+var onvue_type_template_id_f69415f2_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./src/constants.js
 const DATE_TIME_FORMAT = 'YYYY-MM-DD';
@@ -1637,6 +1626,29 @@ var moment_default = /*#__PURE__*/__webpack_require__.n(moment);
   },
   computed: {
     ...mapGetters('rruleGenerator', ['initFromString', 'options']),
+    month: {
+      get() {
+        if (this.options.bymonth) {
+          return this.options.bymonth - 1;
+        }
+        return 0;
+      },
+      set(val) {
+        this.updateRRule({
+          Month: val + 1
+        });
+      }
+    },
+    day: {
+      get() {
+        return this.options.bymonthday || 1;
+      },
+      set(val) {
+        this.updateRRule({
+          MonthDay: val
+        });
+      }
+    },
     months() {
       return MONTHS;
     },
@@ -1647,61 +1659,8 @@ var moment_default = /*#__PURE__*/__webpack_require__.n(moment);
       return moment_default()(MONTHS[this.month], 'MMM').daysInMonth();
     }
   },
-  data() {
-    return {
-      initing: false,
-      month: 0,
-      day: 1
-    };
-  },
   methods: {
-    ...mapActions('rruleGenerator', ['updateRRule']),
-    init() {
-      this.initing = true;
-      this.day = this.options.bymonthday;
-      this.month = this.options.bymonth - 1;
-      this.$nextTick(() => this.initing = false);
-    }
-  },
-  watch: {
-    state(val) {
-      if (val == 'on') {
-        if (this.initFromString) {
-          this.init();
-        } else {
-          this.updateRRule({
-            Month: this.bymonth,
-            MonthDay: this.day
-          });
-        }
-      }
-    },
-    month(val) {
-      if (!this.initing) {
-        this.updateRRule({
-          Month: val + 1
-        });
-      }
-    },
-    day(val) {
-      if (!this.initing) {
-        this.updateRRule({
-          MonthDay: val
-        });
-      }
-    }
-  },
-  created() {
-    if (this.state === 'on') {
-      if (this.initFromString) {
-        this.init();
-      } else {
-        this.updateRRule({
-          Month: this.bymonth,
-          MonthDay: this.day
-        });
-      }
-    }
+    ...mapActions('rruleGenerator', ['updateRRule'])
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/yearly/on.vue?vue&type=script&lang=js&
@@ -1716,18 +1675,18 @@ var moment_default = /*#__PURE__*/__webpack_require__.n(moment);
 ;
 var on_component = normalizeComponent(
   yearly_onvue_type_script_lang_js_,
-  onvue_type_template_id_e3141ef6_scoped_true_render,
-  onvue_type_template_id_e3141ef6_scoped_true_staticRenderFns,
+  onvue_type_template_id_f69415f2_render,
+  onvue_type_template_id_f69415f2_staticRenderFns,
   false,
   null,
-  "e3141ef6",
+  null,
   null
   
 )
 
 /* harmony default export */ var on = (on_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/onthe.vue?vue&type=template&id=f3e867ec&scoped=true&
-var onthevue_type_template_id_f3e867ec_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/onthe.vue?vue&type=template&id=3a706223&
+var onthevue_type_template_id_3a706223_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -1834,7 +1793,7 @@ var onthevue_type_template_id_f3e867ec_scoped_true_render = function render() {
     }, [_vm._v(_vm._s(m))]);
   }), 0)])]);
 };
-var onthevue_type_template_id_f3e867ec_scoped_true_staticRenderFns = [];
+var onthevue_type_template_id_3a706223_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/yearly/onthe.vue?vue&type=script&lang=js&
 
@@ -1848,90 +1807,34 @@ var onthevue_type_template_id_f3e867ec_scoped_true_staticRenderFns = [];
   },
   computed: {
     ...mapGetters('rruleGenerator', ['initFromString', 'options']),
-    months() {
-      return MONTHS;
-    },
-    weekDays() {
-      return DAYS;
-    },
-    orders() {
-      return ['First', 'Second', 'Third', 'Fourth', 'Last'];
-    },
-    bymonth() {
-      return this.month + 1;
-    },
-    bysetpos() {
-      return this.pos + 1;
-    }
-  },
-  data() {
-    return {
-      month: 0,
-      day: 1,
-      pos: 0,
-      initing: false
-    };
-  },
-  methods: {
-    ...mapActions('rruleGenerator', ['updateRRule']),
-    init() {
-      this.initing = true;
-      this.month = this.options.bymonth - 1;
-      const weekday = this.options.byweekday;
-      if (Array.isArray(weekday)) {
-        switch (weekday.length) {
-          case 7:
-            this.day = 7;
-            break;
-          case 5:
-            this.day = 8;
-            break;
-          case 2:
-            this.day = 9;
-            break;
-          case 1:
-            this.day = weekday[0].weekday;
-        }
-      }
-      const pos = this.options.bysetpos;
-      if (pos === -1) {
-        this.pos = 4;
-      } else {
-        this.pos = pos - 1;
-      }
-      this.$nextTick(() => this.initing = false);
-    }
-  },
-  created() {
-    if (this.state === 'onthe') {
-      if (this.initFromString) {
-        this.init();
-      }
-    }
-  },
-  watch: {
-    state(val) {
-      if (val == 'onthe') {
-        if (this.initFromString) {
-          this.init();
-        } else {
-          this.updateRRule({
-            Month: this.bymonth,
-            WeekDay: this.day,
-            Pos: this.bysetpos
-          });
-        }
-      }
-    },
-    month(val) {
-      if (!this.initing) {
+    month: {
+      get() {
+        return this.options.bymonth - 1 || 0;
+      },
+      set(val) {
         this.updateRRule({
           Month: val + 1
         });
       }
     },
-    day(val) {
-      if (!this.initing) {
+    day: {
+      get() {
+        const weekday = this.options.byweekday;
+        if (Array.isArray(weekday)) {
+          switch (weekday.length) {
+            case 7:
+              return 7;
+            case 5:
+              return 8;
+            case 2:
+              return 9;
+            case 1:
+              return weekday[0].weekday;
+          }
+        }
+        return weekday;
+      },
+      set(val) {
         let weekday = val;
         switch (val) {
           case 7:
@@ -1949,8 +1852,16 @@ var onthevue_type_template_id_f3e867ec_scoped_true_staticRenderFns = [];
         });
       }
     },
-    pos(val) {
-      if (!this.initing) {
+    pos: {
+      get() {
+        const pos = this.options.bysetpos;
+        if (pos === -1) {
+          return 4;
+        } else {
+          return pos - 1;
+        }
+      },
+      set(val) {
         let pos = val + 1;
         if (pos === 5) {
           pos = -1;
@@ -1959,7 +1870,19 @@ var onthevue_type_template_id_f3e867ec_scoped_true_staticRenderFns = [];
           Pos: pos
         });
       }
+    },
+    months() {
+      return MONTHS;
+    },
+    weekDays() {
+      return DAYS;
+    },
+    orders() {
+      return ['First', 'Second', 'Third', 'Fourth', 'Last'];
     }
+  },
+  methods: {
+    ...mapActions('rruleGenerator', ['updateRRule'])
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/yearly/onthe.vue?vue&type=script&lang=js&
@@ -1974,11 +1897,11 @@ var onthevue_type_template_id_f3e867ec_scoped_true_staticRenderFns = [];
 ;
 var onthe_component = normalizeComponent(
   yearly_onthevue_type_script_lang_js_,
-  onthevue_type_template_id_f3e867ec_scoped_true_render,
-  onthevue_type_template_id_f3e867ec_scoped_true_staticRenderFns,
+  onthevue_type_template_id_3a706223_render,
+  onthevue_type_template_id_3a706223_staticRenderFns,
   false,
   null,
-  "f3e867ec",
+  null,
   null
   
 )
@@ -2001,40 +1924,34 @@ var esm = __webpack_require__(1415);
     Interval: interval
   },
   computed: {
-    ...mapGetters('rruleGenerator', ['initFromString', 'options'])
+    ...mapGetters('rruleGenerator', ['initFromString', 'options']),
+    yearlyState: {
+      get() {
+        if (this.options.bysetpos) {
+          return 'onthe';
+        } else {
+          return 'on';
+        }
+      },
+      set(val) {
+        this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos']);
+        if (val === 'on') {
+          this.updateRRule({
+            Month: 0,
+            MonthDay: 1
+          });
+        } else {
+          this.updateRRule({
+            Month: 1,
+            WeekDay: 0,
+            Pos: 1
+          });
+        }
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  data() {
-    return {
-      yearlyState: 'on'
-    };
-  },
-  watch: {
-    yearlyState(val, ov) {
-      switch (ov) {
-        case 'on':
-          this.resetRRule(['Month', 'MonthDay']);
-          break;
-        case 'onthe':
-          this.resetRRule(['Month', 'WeekDay', 'Pos']);
-          break;
-      }
-    }
-  },
-  created() {
-    if (this.initFromString) {
-      if (this.options.bymonthday) {
-        this.yearlyState = 'on';
-      } else {
-        this.yearlyState = 'onthe';
-      }
-    } else {
-      this.updateRRule({
-        Freq: esm/* RRule.YEARLY */.Ci.YEARLY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/yearly/index.vue?vue&type=script&lang=js&
@@ -2049,18 +1966,18 @@ var esm = __webpack_require__(1415);
 ;
 var yearly_component = normalizeComponent(
   repeat_yearlyvue_type_script_lang_js_,
-  yearlyvue_type_template_id_037d6502_scoped_true_render,
-  yearlyvue_type_template_id_037d6502_scoped_true_staticRenderFns,
+  yearlyvue_type_template_id_aaaa0990_render,
+  yearlyvue_type_template_id_aaaa0990_staticRenderFns,
   false,
   null,
-  "037d6502",
+  null,
   null
   
 )
 
 /* harmony default export */ var yearly = (yearly_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/index.vue?vue&type=template&id=8657fca4&scoped=true&
-var monthlyvue_type_template_id_8657fca4_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/index.vue?vue&type=template&id=722c9cbc&
+var monthlyvue_type_template_id_722c9cbc_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2136,10 +2053,10 @@ var monthlyvue_type_template_id_8657fca4_scoped_true_render = function render() 
     }
   })], 1)])]);
 };
-var monthlyvue_type_template_id_8657fca4_scoped_true_staticRenderFns = [];
+var monthlyvue_type_template_id_722c9cbc_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/on.vue?vue&type=template&id=4d04354a&scoped=true&
-var onvue_type_template_id_4d04354a_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/on.vue?vue&type=template&id=3fbf1e26&
+var onvue_type_template_id_3fbf1e26_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2180,7 +2097,7 @@ var onvue_type_template_id_4d04354a_scoped_true_render = function render() {
     }, [_vm._v(_vm._s(d))]);
   }), 0)])]);
 };
-var onvue_type_template_id_4d04354a_scoped_true_staticRenderFns = [];
+var onvue_type_template_id_3fbf1e26_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/on.vue?vue&type=script&lang=js&
 
@@ -2192,42 +2109,20 @@ var onvue_type_template_id_4d04354a_scoped_true_staticRenderFns = [];
     }
   },
   computed: {
-    ...mapGetters('rruleGenerator', ['initFromString', 'options'])
-  },
-  data() {
-    return {
-      day: 1
-    };
+    ...mapGetters('rruleGenerator', ['initFromString', 'options']),
+    day: {
+      get() {
+        return this.options.bymonthday;
+      },
+      set(val) {
+        this.updateRRule({
+          MonthDay: val
+        });
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule'])
-  },
-  watch: {
-    state(val) {
-      if (val == 'on') {
-        if (this.initFromString) {
-          this.day = this.options.bymonthday;
-        } else {
-          this.updateRRule({
-            MonthDay: this.day
-          });
-        }
-      }
-    },
-    day(val) {
-      this.updateRRule({
-        MonthDay: val
-      });
-    }
-  },
-  created() {
-    if (this.initFromString) {
-      this.day = this.options.bymonthday;
-    } else {
-      this.updateRRule({
-        MonthDay: this.day
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/monthly/on.vue?vue&type=script&lang=js&
@@ -2242,18 +2137,18 @@ var onvue_type_template_id_4d04354a_scoped_true_staticRenderFns = [];
 ;
 var monthly_on_component = normalizeComponent(
   repeat_monthly_onvue_type_script_lang_js_,
-  onvue_type_template_id_4d04354a_scoped_true_render,
-  onvue_type_template_id_4d04354a_scoped_true_staticRenderFns,
+  onvue_type_template_id_3fbf1e26_render,
+  onvue_type_template_id_3fbf1e26_staticRenderFns,
   false,
   null,
-  "4d04354a",
+  null,
   null
   
 )
 
 /* harmony default export */ var monthly_on = (monthly_on_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/onthe.vue?vue&type=template&id=487962fa&scoped=true&
-var onthevue_type_template_id_487962fa_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/onthe.vue?vue&type=template&id=2db4415a&
+var onthevue_type_template_id_2db4415a_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2326,7 +2221,7 @@ var onthevue_type_template_id_487962fa_scoped_true_render = function render() {
     }, [_vm._v(_vm._s(d))]);
   }), 0)])]);
 };
-var onthevue_type_template_id_487962fa_scoped_true_staticRenderFns = [];
+var onthevue_type_template_id_2db4415a_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/monthly/onthe.vue?vue&type=script&lang=js&
 
@@ -2346,92 +2241,63 @@ var onthevue_type_template_id_487962fa_scoped_true_staticRenderFns = [];
     orders() {
       return ['First', 'Second', 'Third', 'Fourth', 'Last'];
     },
-    bysetpos() {
-      return this.pos + 1;
+    pos: {
+      get() {
+        const pos = this.options.bysetpos;
+        if (pos === -1) {
+          return 4;
+        } else {
+          return pos - 1;
+        }
+      },
+      set(val) {
+        let pos = val + 1;
+        if (pos === 5) {
+          pos = -1;
+        }
+        this.updateRRule({
+          Pos: pos
+        });
+      }
+    },
+    day: {
+      get() {
+        const weekday = this.options.byweekday;
+        if (Array.isArray(weekday)) {
+          switch (weekday.length) {
+            case 7:
+              return 7;
+            case 5:
+              return 8;
+            case 2:
+              return 9;
+            case 1:
+              return weekday[0].weekday;
+          }
+        }
+        return weekday;
+      },
+      set(val) {
+        let weekday = val;
+        switch (val) {
+          case 7:
+            weekday = [0, 1, 2, 3, 4, 5, 6];
+            break;
+          case 8:
+            weekday = [0, 1, 2, 3, 4];
+            break;
+          case 9:
+            weekday = [5, 6];
+            break;
+        }
+        this.updateRRule({
+          WeekDay: weekday
+        });
+      }
     }
-  },
-  data() {
-    return {
-      day: 1,
-      pos: 0,
-      initing: false
-    };
   },
   methods: {
-    ...mapActions('rruleGenerator', ['updateRRule']),
-    init() {
-      this.initing = true;
-      const weekday = this.options.byweekday;
-      if (Array.isArray(weekday)) {
-        switch (weekday.length) {
-          case 7:
-            this.day = 7;
-            break;
-          case 5:
-            this.day = 8;
-            break;
-          case 2:
-            this.day = 9;
-            break;
-          case 1:
-            this.day = weekday[0].weekday;
-        }
-      }
-      const pos = this.options.bysetpos;
-      if (pos === -1) {
-        this.pos = 4;
-      } else {
-        this.pos = pos - 1;
-      }
-      this.$nextTick(() => this.initing = false);
-    }
-  },
-  created() {
-    if (this.initFromString) {
-      this.init();
-    }
-  },
-  watch: {
-    state(val) {
-      if (val == 'onthe') {
-        if (this.initFromString) {
-          this.init();
-        } else {
-          this.updateRRule({
-            WeekDay: this.day,
-            Pos: this.bysetpos
-          });
-        }
-      }
-    },
-    day(val) {
-      if (this.initing) return;
-      let weekday = val;
-      switch (val) {
-        case 7:
-          weekday = [0, 1, 2, 3, 4, 5, 6];
-          break;
-        case 8:
-          weekday = [0, 1, 2, 3, 4];
-          break;
-        case 9:
-          weekday = [5, 6];
-          break;
-      }
-      this.updateRRule({
-        WeekDay: weekday
-      });
-    },
-    pos(val) {
-      if (this.initing) return;
-      let pos = val + 1;
-      if (pos === 5) {
-        pos = -1;
-      }
-      this.updateRRule({
-        Pos: pos
-      });
-    }
+    ...mapActions('rruleGenerator', ['updateRRule'])
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/monthly/onthe.vue?vue&type=script&lang=js&
@@ -2446,11 +2312,11 @@ var onthevue_type_template_id_487962fa_scoped_true_staticRenderFns = [];
 ;
 var monthly_onthe_component = normalizeComponent(
   repeat_monthly_onthevue_type_script_lang_js_,
-  onthevue_type_template_id_487962fa_scoped_true_render,
-  onthevue_type_template_id_487962fa_scoped_true_staticRenderFns,
+  onthevue_type_template_id_2db4415a_render,
+  onthevue_type_template_id_2db4415a_staticRenderFns,
   false,
   null,
-  "487962fa",
+  null,
   null
   
 )
@@ -2471,40 +2337,32 @@ var monthly_onthe_component = normalizeComponent(
     Interval: interval
   },
   computed: {
-    ...mapGetters('rruleGenerator', ['initFromString', 'options'])
+    ...mapGetters('rruleGenerator', ['initFromString', 'options']),
+    monthlyState: {
+      get() {
+        if (this.options.bymonthday) {
+          return 'on';
+        } else {
+          return 'onthe';
+        }
+      },
+      set(val) {
+        this.resetRRule(['MonthDay', 'WeekDay', 'Pos']);
+        if (val === 'on') {
+          this.updateRRule({
+            MonthDay: 1
+          });
+        } else {
+          this.updateRRule({
+            WeekDay: 1,
+            Pos: 1
+          });
+        }
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  data() {
-    return {
-      monthlyState: 'on'
-    };
-  },
-  watch: {
-    monthlyState(val, ov) {
-      switch (ov) {
-        case 'on':
-          this.resetRRule(['MonthDay']);
-          break;
-        case 'onthe':
-          this.resetRRule(['WeekDay', 'Pos']);
-          break;
-      }
-    }
-  },
-  created() {
-    if (this.initFromString) {
-      if (this.options.bymonthday) {
-        this.monthlyState = 'on';
-      } else {
-        this.monthlyState = 'onthe';
-      }
-    } else {
-      this.updateRRule({
-        Freq: esm/* RRule.MONTHLY */.Ci.MONTHLY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/monthly/index.vue?vue&type=script&lang=js&
@@ -2519,18 +2377,18 @@ var monthly_onthe_component = normalizeComponent(
 ;
 var monthly_component = normalizeComponent(
   repeat_monthlyvue_type_script_lang_js_,
-  monthlyvue_type_template_id_8657fca4_scoped_true_render,
-  monthlyvue_type_template_id_8657fca4_scoped_true_staticRenderFns,
+  monthlyvue_type_template_id_722c9cbc_render,
+  monthlyvue_type_template_id_722c9cbc_staticRenderFns,
   false,
   null,
-  "8657fca4",
+  null,
   null
   
 )
 
 /* harmony default export */ var monthly = (monthly_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/index.vue?vue&type=template&id=3c8b4ee8&
-var weeklyvue_type_template_id_3c8b4ee8_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/index.vue?vue&type=template&id=c73ca120&
+var weeklyvue_type_template_id_c73ca120_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2548,10 +2406,10 @@ var weeklyvue_type_template_id_3c8b4ee8_render = function render() {
     staticClass: "col-sm-offset-2"
   })], 1)])]);
 };
-var weeklyvue_type_template_id_3c8b4ee8_staticRenderFns = [];
+var weeklyvue_type_template_id_c73ca120_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/on.vue?vue&type=template&id=9d30647a&scoped=true&
-var onvue_type_template_id_9d30647a_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/on.vue?vue&type=template&id=2473c442&scoped=true&
+var onvue_type_template_id_2473c442_scoped_true_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2588,7 +2446,7 @@ var onvue_type_template_id_9d30647a_scoped_true_render = function render() {
     }, [_vm._v(" " + _vm._s(d) + " ")])];
   })], 2)]);
 };
-var onvue_type_template_id_9d30647a_scoped_true_staticRenderFns = [];
+var onvue_type_template_id_2473c442_scoped_true_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/on.vue?vue&type=script&lang=js&
 
@@ -2611,23 +2469,14 @@ var onvue_type_template_id_9d30647a_scoped_true_staticRenderFns = [];
         'WeekDay': this.selectDays
       });
     }
-  },
-  created() {
-    if (this.initFromString) {
-      this.options.byweekday?.forEach(d => this.toggleSelectDays(d.weekday));
-    } else {
-      this.updateRRule({
-        'WeekDay': this.selectDays
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/weekly/on.vue?vue&type=script&lang=js&
  /* harmony default export */ var repeat_weekly_onvue_type_script_lang_js_ = (weekly_onvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/on.vue?vue&type=style&index=0&id=9d30647a&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/weekly/on.vue?vue&type=style&index=0&id=2473c442&prod&scoped=true&lang=css&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/repeat/weekly/on.vue?vue&type=style&index=0&id=9d30647a&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./src/components/repeat/weekly/on.vue?vue&type=style&index=0&id=2473c442&prod&scoped=true&lang=css&
 
 ;// CONCATENATED MODULE: ./src/components/repeat/weekly/on.vue
 
@@ -2640,11 +2489,11 @@ var onvue_type_template_id_9d30647a_scoped_true_staticRenderFns = [];
 
 var weekly_on_component = normalizeComponent(
   repeat_weekly_onvue_type_script_lang_js_,
-  onvue_type_template_id_9d30647a_scoped_true_render,
-  onvue_type_template_id_9d30647a_scoped_true_staticRenderFns,
+  onvue_type_template_id_2473c442_scoped_true_render,
+  onvue_type_template_id_2473c442_scoped_true_staticRenderFns,
   false,
   null,
-  "9d30647a",
+  "2473c442",
   null
   
 )
@@ -2667,13 +2516,6 @@ var weekly_on_component = normalizeComponent(
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  created() {
-    if (!this.initFromString) {
-      this.updateRRule({
-        Freq: esm/* RRule.WEEKLY */.Ci.WEEKLY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/weekly/index.vue?vue&type=script&lang=js&
@@ -2688,8 +2530,8 @@ var weekly_on_component = normalizeComponent(
 ;
 var weekly_component = normalizeComponent(
   repeat_weeklyvue_type_script_lang_js_,
-  weeklyvue_type_template_id_3c8b4ee8_render,
-  weeklyvue_type_template_id_3c8b4ee8_staticRenderFns,
+  weeklyvue_type_template_id_c73ca120_render,
+  weeklyvue_type_template_id_c73ca120_staticRenderFns,
   false,
   null,
   null,
@@ -2698,8 +2540,8 @@ var weekly_component = normalizeComponent(
 )
 
 /* harmony default export */ var weekly = (weekly_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/daily/index.vue?vue&type=template&id=3f2eb1e4&scoped=true&
-var dailyvue_type_template_id_3f2eb1e4_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/daily/index.vue?vue&type=template&id=dd35d0cc&
+var dailyvue_type_template_id_dd35d0cc_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2713,7 +2555,7 @@ var dailyvue_type_template_id_3f2eb1e4_scoped_true_render = function render() {
     }
   })], 1)])]);
 };
-var dailyvue_type_template_id_3f2eb1e4_scoped_true_staticRenderFns = [];
+var dailyvue_type_template_id_dd35d0cc_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/daily/index.vue?vue&type=script&lang=js&
 
@@ -2730,13 +2572,6 @@ var dailyvue_type_template_id_3f2eb1e4_scoped_true_staticRenderFns = [];
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  created() {
-    if (!this.initFromString) {
-      this.updateRRule({
-        Freq: esm/* RRule.DAILY */.Ci.DAILY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/daily/index.vue?vue&type=script&lang=js&
@@ -2751,18 +2586,18 @@ var dailyvue_type_template_id_3f2eb1e4_scoped_true_staticRenderFns = [];
 ;
 var daily_component = normalizeComponent(
   repeat_dailyvue_type_script_lang_js_,
-  dailyvue_type_template_id_3f2eb1e4_scoped_true_render,
-  dailyvue_type_template_id_3f2eb1e4_scoped_true_staticRenderFns,
+  dailyvue_type_template_id_dd35d0cc_render,
+  dailyvue_type_template_id_dd35d0cc_staticRenderFns,
   false,
   null,
-  "3f2eb1e4",
+  null,
   null
   
 )
 
 /* harmony default export */ var daily = (daily_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/hourly/index.vue?vue&type=template&id=5711400c&scoped=true&
-var hourlyvue_type_template_id_5711400c_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/hourly/index.vue?vue&type=template&id=2fc7b51e&
+var hourlyvue_type_template_id_2fc7b51e_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2776,7 +2611,7 @@ var hourlyvue_type_template_id_5711400c_scoped_true_render = function render() {
     }
   })], 1)])]);
 };
-var hourlyvue_type_template_id_5711400c_scoped_true_staticRenderFns = [];
+var hourlyvue_type_template_id_2fc7b51e_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/hourly/index.vue?vue&type=script&lang=js&
 
@@ -2793,13 +2628,6 @@ var hourlyvue_type_template_id_5711400c_scoped_true_staticRenderFns = [];
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  created() {
-    if (!this.initFromString) {
-      this.updateRRule({
-        Freq: esm/* RRule.HOURLY */.Ci.HOURLY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/hourly/index.vue?vue&type=script&lang=js&
@@ -2814,18 +2642,18 @@ var hourlyvue_type_template_id_5711400c_scoped_true_staticRenderFns = [];
 ;
 var hourly_component = normalizeComponent(
   repeat_hourlyvue_type_script_lang_js_,
-  hourlyvue_type_template_id_5711400c_scoped_true_render,
-  hourlyvue_type_template_id_5711400c_scoped_true_staticRenderFns,
+  hourlyvue_type_template_id_2fc7b51e_render,
+  hourlyvue_type_template_id_2fc7b51e_staticRenderFns,
   false,
   null,
-  "5711400c",
+  null,
   null
   
 )
 
 /* harmony default export */ var hourly = (hourly_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/minutely/index.vue?vue&type=template&id=d0ee59ac&scoped=true&
-var minutelyvue_type_template_id_d0ee59ac_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/minutely/index.vue?vue&type=template&id=3362034a&
+var minutelyvue_type_template_id_3362034a_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2839,7 +2667,7 @@ var minutelyvue_type_template_id_d0ee59ac_scoped_true_render = function render()
     }
   })], 1)])]);
 };
-var minutelyvue_type_template_id_d0ee59ac_scoped_true_staticRenderFns = [];
+var minutelyvue_type_template_id_3362034a_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/minutely/index.vue?vue&type=script&lang=js&
 
@@ -2856,13 +2684,6 @@ var minutelyvue_type_template_id_d0ee59ac_scoped_true_staticRenderFns = [];
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  created() {
-    if (!this.initFromString) {
-      this.updateRRule({
-        Freq: esm/* RRule.MINUTELY */.Ci.MINUTELY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/minutely/index.vue?vue&type=script&lang=js&
@@ -2877,18 +2698,18 @@ var minutelyvue_type_template_id_d0ee59ac_scoped_true_staticRenderFns = [];
 ;
 var minutely_component = normalizeComponent(
   repeat_minutelyvue_type_script_lang_js_,
-  minutelyvue_type_template_id_d0ee59ac_scoped_true_render,
-  minutelyvue_type_template_id_d0ee59ac_scoped_true_staticRenderFns,
+  minutelyvue_type_template_id_3362034a_render,
+  minutelyvue_type_template_id_3362034a_staticRenderFns,
   false,
   null,
-  "d0ee59ac",
+  null,
   null
   
 )
 
 /* harmony default export */ var minutely = (minutely_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/secondly/index.vue?vue&type=template&id=0d59b9ec&scoped=true&
-var secondlyvue_type_template_id_0d59b9ec_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/secondly/index.vue?vue&type=template&id=38ed52c4&
+var secondlyvue_type_template_id_38ed52c4_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -2902,7 +2723,7 @@ var secondlyvue_type_template_id_0d59b9ec_scoped_true_render = function render()
     }
   })], 1)])]);
 };
-var secondlyvue_type_template_id_0d59b9ec_scoped_true_staticRenderFns = [];
+var secondlyvue_type_template_id_38ed52c4_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/secondly/index.vue?vue&type=script&lang=js&
 
@@ -2919,13 +2740,6 @@ var secondlyvue_type_template_id_0d59b9ec_scoped_true_staticRenderFns = [];
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule', 'resetRRule'])
-  },
-  created() {
-    if (!this.initFromString) {
-      this.updateRRule({
-        Freq: esm/* RRule.SECONDLY */.Ci.SECONDLY
-      });
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/secondly/index.vue?vue&type=script&lang=js&
@@ -2940,11 +2754,11 @@ var secondlyvue_type_template_id_0d59b9ec_scoped_true_staticRenderFns = [];
 ;
 var secondly_component = normalizeComponent(
   repeat_secondlyvue_type_script_lang_js_,
-  secondlyvue_type_template_id_0d59b9ec_scoped_true_render,
-  secondlyvue_type_template_id_0d59b9ec_scoped_true_staticRenderFns,
+  secondlyvue_type_template_id_38ed52c4_render,
+  secondlyvue_type_template_id_38ed52c4_staticRenderFns,
   false,
   null,
-  "0d59b9ec",
+  null,
   null
   
 )
@@ -2971,39 +2785,63 @@ var secondly_component = normalizeComponent(
     Minutely: minutely,
     Secondly: secondly
   },
-  data() {
-    return {
-      repeatState: 'Weekly'
-    };
-  },
   computed: {
     ...mapGetters('rruleGenerator', ['options']),
+    repeatState: {
+      get() {
+        return this.repeatOptions[this.options.freq];
+      },
+      set(val) {
+        this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos']);
+        switch (val) {
+          case 'Yearly':
+            this.updateRRule({
+              Freq: RRule.YEARLY,
+              Month: 0,
+              MonthDay: 1
+            });
+            break;
+          case 'Monthly':
+            this.updateRRule({
+              Freq: RRule.MONTHLY,
+              MonthDay: 1
+            });
+            break;
+          case 'Weekly':
+            this.updateRRule({
+              Freq: RRule.WEEKLY,
+              WeekDay: []
+            });
+            break;
+          case 'Daily':
+            this.updateRRule({
+              Freq: RRule.DAILY
+            });
+            break;
+          case 'Hourly':
+            this.updateRRule({
+              Freq: RRule.HOURLY
+            });
+            break;
+          case 'Minutely':
+            this.updateRRule({
+              Freq: RRule.MINUTELY
+            });
+            break;
+          case 'Secondly':
+            this.updateRRule({
+              Freq: RRule.SECONDLY
+            });
+            break;
+        }
+      }
+    },
     repeatOptions() {
       return ['Yearly', 'Monthly', 'Weekly', 'Daily', 'Hourly', 'Minutely', 'Secondly'];
     }
   },
   methods: {
-    ...mapActions('rruleGenerator', ['resetRRule'])
-  },
-  created() {
-    this.repeatState = this.repeatOptions[this.options.freq];
-  },
-  watch: {
-    repeatState(val, ov) {
-      switch (ov) {
-        case 'Yearly':
-          this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos']);
-          break;
-        case 'Monthly':
-          this.resetRRule(['MonthDay', 'WeekDay', 'Pos']);
-          break;
-        case 'Weekly':
-          this.resetRRule(['WeekDay']);
-          break;
-        case 'Daily':
-          break;
-      }
-    }
+    ...mapActions('rruleGenerator', ['resetRRule', 'updateRRule'])
   }
 });
 ;// CONCATENATED MODULE: ./src/components/repeat/index.vue?vue&type=script&lang=js&
@@ -3018,18 +2856,18 @@ var secondly_component = normalizeComponent(
 ;
 var repeat_component = normalizeComponent(
   components_repeatvue_type_script_lang_js_,
-  repeatvue_type_template_id_6bb5cbbf_scoped_true_render,
-  repeatvue_type_template_id_6bb5cbbf_scoped_true_staticRenderFns,
+  repeatvue_type_template_id_22a01a51_render,
+  repeatvue_type_template_id_22a01a51_staticRenderFns,
   false,
   null,
-  "6bb5cbbf",
+  null,
   null
   
 )
 
 /* harmony default export */ var components_repeat = (repeat_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/index.vue?vue&type=template&id=0e7693b8&scoped=true&
-var endvue_type_template_id_0e7693b8_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/index.vue?vue&type=template&id=5d7f3c13&scoped=true&
+var endvue_type_template_id_5d7f3c13_scoped_true_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -3074,10 +2912,10 @@ var endvue_type_template_id_0e7693b8_scoped_true_render = function render() {
     staticClass: "col-sm-6"
   }, [_vm.endState === 'After' ? _c('after') : _vm._e(), _vm.endState === 'OnDate' ? _c('on-date') : _vm._e()], 1)]);
 };
-var endvue_type_template_id_0e7693b8_scoped_true_staticRenderFns = [];
+var endvue_type_template_id_5d7f3c13_scoped_true_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/After.vue?vue&type=template&id=2b1d928d&scoped=true&
-var Aftervue_type_template_id_2b1d928d_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/After.vue?vue&type=template&id=653ef50a&
+var Aftervue_type_template_id_653ef50a_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -3109,34 +2947,27 @@ var Aftervue_type_template_id_2b1d928d_scoped_true_render = function render() {
     staticClass: "col-9 col-sm-2"
   }, [_vm._v(" executions ")])]);
 };
-var Aftervue_type_template_id_2b1d928d_scoped_true_staticRenderFns = [];
+var Aftervue_type_template_id_653ef50a_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/After.vue?vue&type=script&lang=js&
 
 /* harmony default export */ var Aftervue_type_script_lang_js_ = ({
   name: 'EndAfter',
-  data() {
-    return {
-      count: 1
-    };
-  },
   computed: {
-    ...mapGetters('rruleGenerator', ['options', 'initFromString'])
+    ...mapGetters('rruleGenerator', ['options', 'initFromString']),
+    count: {
+      get() {
+        return this.options.count || 1;
+      },
+      set(val) {
+        this.updateRRule({
+          Count: val
+        });
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', ['updateRRule'])
-  },
-  watch: {
-    count(val) {
-      this.updateRRule({
-        Count: val
-      });
-    }
-  },
-  created() {
-    if (this.initFromString) {
-      this.count = this.options.count;
-    }
   }
 });
 ;// CONCATENATED MODULE: ./src/components/end/After.vue?vue&type=script&lang=js&
@@ -3151,18 +2982,18 @@ var Aftervue_type_template_id_2b1d928d_scoped_true_staticRenderFns = [];
 ;
 var After_component = normalizeComponent(
   end_Aftervue_type_script_lang_js_,
-  Aftervue_type_template_id_2b1d928d_scoped_true_render,
-  Aftervue_type_template_id_2b1d928d_scoped_true_staticRenderFns,
+  Aftervue_type_template_id_653ef50a_render,
+  Aftervue_type_template_id_653ef50a_staticRenderFns,
   false,
   null,
-  "2b1d928d",
+  null,
   null
   
 )
 
 /* harmony default export */ var After = (After_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/OnDate.vue?vue&type=template&id=0f2e3c7f&scoped=true&
-var OnDatevue_type_template_id_0f2e3c7f_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/OnDate.vue?vue&type=template&id=a60ab348&
+var OnDatevue_type_template_id_a60ab348_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -3189,7 +3020,7 @@ var OnDatevue_type_template_id_0f2e3c7f_scoped_true_render = function render() {
     }
   })]);
 };
-var OnDatevue_type_template_id_0f2e3c7f_scoped_true_staticRenderFns = [];
+var OnDatevue_type_template_id_a60ab348_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/end/OnDate.vue?vue&type=script&lang=js&
 
@@ -3198,44 +3029,21 @@ var OnDatevue_type_template_id_0f2e3c7f_scoped_true_staticRenderFns = [];
   computed: {
     _date: {
       get() {
-        return this.date.toISOString().split('T')[0];
+        if (this.options.until) {
+          return new Date(this.options.until).toISOString().split('T')[0];
+        }
+        return new Date().toISOString().split('T')[0];
       },
       set(val) {
-        this.date = new Date(val);
+        this.updateRRule({
+          Until: new Date(val)
+        });
       }
     },
     ...mapGetters('rruleGenerator', ['options', 'initFromString'])
   },
   methods: {
-    ...mapActions('rruleGenerator', ['updateRRule']),
-    init() {
-      this.initing = true;
-      this.date = new Date(this.options.until);
-      this.$nextTick(() => this.initing = false);
-    }
-  },
-  data() {
-    return {
-      date: new Date(),
-      initing: false
-    };
-  },
-  watch: {
-    date(val) {
-      if (this.initing) return;
-      this.updateRRule({
-        Until: val
-      });
-    }
-  },
-  created() {
-    if (!this.initFromString) {
-      this.updateRRule({
-        Until: this.date
-      });
-    } else {
-      this.init();
-    }
+    ...mapActions('rruleGenerator', ['updateRRule'])
   }
 });
 ;// CONCATENATED MODULE: ./src/components/end/OnDate.vue?vue&type=script&lang=js&
@@ -3250,11 +3058,11 @@ var OnDatevue_type_template_id_0f2e3c7f_scoped_true_staticRenderFns = [];
 ;
 var OnDate_component = normalizeComponent(
   end_OnDatevue_type_script_lang_js_,
-  OnDatevue_type_template_id_0f2e3c7f_scoped_true_render,
-  OnDatevue_type_template_id_0f2e3c7f_scoped_true_staticRenderFns,
+  OnDatevue_type_template_id_a60ab348_render,
+  OnDatevue_type_template_id_a60ab348_staticRenderFns,
   false,
   null,
-  "0f2e3c7f",
+  null,
   null
   
 )
@@ -3271,42 +3079,37 @@ var OnDate_component = normalizeComponent(
     After: After,
     OnDate: OnDate
   },
-  data() {
-    return {
-      endState: 'After'
-    };
-  },
   computed: {
     ...mapGetters('rruleGenerator', ['initFromString', 'options']),
+    endState: {
+      get() {
+        if (this.options.until) {
+          return 'OnDate';
+        } else if (this.options.count) {
+          return 'After';
+        } else {
+          return 'Never';
+        }
+      },
+      set(val) {
+        this.resetRRule(['Count', 'Until']);
+        if (val === 'OnDate') {
+          this.updateRRule({
+            Until: new Date()
+          });
+        } else if (val === 'After') {
+          this.updateRRule({
+            Count: 1
+          });
+        }
+      }
+    },
     endOptions() {
       return ['Never', 'After', 'OnDate'];
     }
   },
   methods: {
-    ...mapActions('rruleGenerator', ['resetRRule'])
-  },
-  created() {
-    if (this.initFromString) {
-      if (this.options.until) {
-        this.endState = 'OnDate';
-      } else if (this.options.count) {
-        this.endState = 'After';
-      } else {
-        this.endState = 'Never';
-      }
-    }
-  },
-  watch: {
-    endState(val, ov) {
-      switch (ov) {
-        case 'After':
-          this.resetRRule(['Count']);
-          break;
-        case 'OnDate':
-          this.resetRRule(['Until']);
-          break;
-      }
-    }
+    ...mapActions('rruleGenerator', ['resetRRule', 'updateRRule'])
   }
 });
 ;// CONCATENATED MODULE: ./src/components/end/index.vue?vue&type=script&lang=js&
@@ -3321,18 +3124,18 @@ var OnDate_component = normalizeComponent(
 ;
 var end_component = normalizeComponent(
   components_endvue_type_script_lang_js_,
-  endvue_type_template_id_0e7693b8_scoped_true_render,
-  endvue_type_template_id_0e7693b8_scoped_true_staticRenderFns,
+  endvue_type_template_id_5d7f3c13_scoped_true_render,
+  endvue_type_template_id_5d7f3c13_scoped_true_staticRenderFns,
   false,
   null,
-  "0e7693b8",
+  "5d7f3c13",
   null
   
 )
 
 /* harmony default export */ var end = (end_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/result/index.vue?vue&type=template&id=29f4728e&scoped=true&
-var resultvue_type_template_id_29f4728e_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/result/index.vue?vue&type=template&id=e35a0572&
+var resultvue_type_template_id_e35a0572_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -3366,7 +3169,7 @@ var resultvue_type_template_id_29f4728e_scoped_true_render = function render() {
     }
   })])]);
 };
-var resultvue_type_template_id_29f4728e_scoped_true_staticRenderFns = [];
+var resultvue_type_template_id_e35a0572_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/result/index.vue?vue&type=script&lang=js&
 
@@ -3389,11 +3192,11 @@ var resultvue_type_template_id_29f4728e_scoped_true_staticRenderFns = [];
 ;
 var result_component = normalizeComponent(
   components_resultvue_type_script_lang_js_,
-  resultvue_type_template_id_29f4728e_scoped_true_render,
-  resultvue_type_template_id_29f4728e_scoped_true_staticRenderFns,
+  resultvue_type_template_id_e35a0572_render,
+  resultvue_type_template_id_e35a0572_staticRenderFns,
   false,
   null,
-  "29f4728e",
+  null,
   null
   
 )
@@ -3418,8 +3221,13 @@ var result_component = normalizeComponent(
     rrule: {
       type: String,
       default: ''
+    },
+    resetRRule: {
+      type: Boolean
+      // signal, watch change to reset rrule
     }
   },
+
   components: {
     Start: start,
     Repeat: components_repeat,
@@ -3438,7 +3246,7 @@ var result_component = normalizeComponent(
     }
   },
   methods: {
-    ...mapActions('rruleGenerator', ['updateRRule', 'importRRule'])
+    ...mapActions('rruleGenerator', ['updateRRule', 'resetRRuleAll', 'importRRule'])
   },
   created() {
     window.RRule = esm/* RRule */.Ci;
@@ -3451,6 +3259,12 @@ var result_component = normalizeComponent(
     }
   },
   watch: {
+    rrule(v) {
+      this.importRRule(v);
+    },
+    resetRRule(v) {
+      this.resetRRuleAll();
+    },
     start(v) {
       this.updateRRule({
         Start: v
@@ -3460,10 +3274,10 @@ var result_component = normalizeComponent(
 });
 ;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_RRuleGeneratorvue_type_script_lang_js_ = (RRuleGeneratorvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=style&index=1&id=39b598d1&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/RRuleGenerator.vue?vue&type=style&index=1&id=fdfba722&prod&scoped=true&lang=css&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue?vue&type=style&index=1&id=39b598d1&prod&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue?vue&type=style&index=1&id=fdfba722&prod&scoped=true&lang=css&
 
 ;// CONCATENATED MODULE: ./src/components/RRuleGenerator.vue
 
@@ -3481,7 +3295,7 @@ var RRuleGenerator_component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "39b598d1",
+  "fdfba722",
   null
   
 )
@@ -25062,7 +24876,7 @@ function rdatesToString(param, rdates, tzid) {
       RRule: {
         freq: rrule__WEBPACK_IMPORTED_MODULE_1__/* .RRule.WEEKLY */ .Ci.WEEKLY,
         dtstart: new Date(),
-        // interval: 1,
+        interval: 1,
         // wkst: undefined,
         count: 1
         // until: undefined,
@@ -25142,12 +24956,6 @@ function rdatesToString(param, rdates, tzid) {
         freq: freq
       };
     },
-    unsetFreq(state) {
-      state.RRule = {
-        ...state.RRule,
-        freq: undefined
-      };
-    },
     setInterval(state, interval) {
       state.RRule = {
         ...state.RRule,
@@ -25157,7 +24965,7 @@ function rdatesToString(param, rdates, tzid) {
     unsetInterval(state) {
       state.RRule = {
         ...state.RRule,
-        interval: undefined
+        interval: 1
       };
     },
     setPos(state, pos) {
@@ -25192,12 +25000,22 @@ function rdatesToString(param, rdates, tzid) {
         state.selectDays.push(d);
       }
     },
+    unsetSelectDays(state) {
+      state.selectDays = [];
+    },
     parseString(state, str) {
       state.initFromString = true;
       state.RRule = rrule__WEBPACK_IMPORTED_MODULE_1__/* .RRule.parseString */ .Ci.parseString(str);
     },
     resetInit(state) {
       state.initFromString = false;
+    },
+    resetRRule(state) {
+      state.RRule = {
+        freq: rrule__WEBPACK_IMPORTED_MODULE_1__/* .RRule.WEEKLY */ .Ci.WEEKLY,
+        dtstart: new Date(),
+        count: 1
+      };
     }
   },
   getters: {
@@ -25265,10 +25083,19 @@ function rdatesToString(param, rdates, tzid) {
     }, updates) {
       updates.forEach(key => commit('unset' + key));
     },
-    importRRule({
+    resetRRuleAll({
       commit
+    }) {
+      ['Until', 'Month', 'MonthDay', 'Pos', 'WeekDay', 'SelectDays'].forEach(key => commit('unset' + key));
+      commit('setCount', 1);
+    },
+    importRRule({
+      commit,
+      getters
     }, rruleString) {
+      commit('unsetSelectDays');
       commit('parseString', rruleString);
+      getters.options.byweekday?.forEach(d => commit('toggleSelectDays', d.weekday));
     }
   }
 });
@@ -27269,7 +27096,7 @@ if (typeof window !== 'undefined') {
 /* harmony default export */ var setPublicPath = (null);
 
 ;// CONCATENATED MODULE: ./src/install.js
-const RRuleGenerator = (__webpack_require__(1692)/* ["default"] */ .Z);
+const RRuleGenerator = (__webpack_require__(6289)/* ["default"] */ .Z);
 const rruleGeneratorModule = (__webpack_require__(8182)/* ["default"] */ .Z);
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
