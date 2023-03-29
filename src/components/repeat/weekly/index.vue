@@ -35,16 +35,6 @@ export default {
       'updateRRule',
       'resetRRule'
     ])
-  },
-  created() {
-    if(!this.initFromString) {
-      this.updateRRule({Freq: RRule.WEEKLY})
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-
-</style>

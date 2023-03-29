@@ -7,7 +7,7 @@ export default {
       RRule: {
         freq: RRule.WEEKLY,
         dtstart: new Date(),
-        // interval: 1,
+        interval: 1,
         // wkst: undefined,
         count: 1,
         // until: undefined,
@@ -57,7 +57,7 @@ export default {
       state.RRule = { ...state.RRule, freq: freq}
     },
     unsetFreq (state) {
-      state.RRule = { ...state.RRule, freq: undefined}
+      state.RRule = { ...state.RRule, freq: RRule.WEEKLY}
     },
     setInterval (state, interval) {
       state.RRule = { ...state.RRule, interval: interval}
@@ -85,12 +85,22 @@ export default {
         state.selectDays.push(d)
       }
     },
+    unsetSelectDays (state) {
+      state.selectDays = []
+    },
     parseString (state, str) {
       state.initFromString = true
       state.RRule = RRule.parseString(str)
     },
     resetInit (state) {
       state.initFromString = false
+    },
+    resetRRule (state) {
+     state.RRule = {
+        freq: RRule.WEEKLY,
+        dtstart: new Date(),
+        count: 1,
+      }
     }
   },
   getters: {
@@ -143,8 +153,14 @@ export default {
     resetRRule ({ commit }, updates) {
       updates.forEach(key => commit('unset' + key))
     },
-    importRRule ({ commit }, rruleString) {
+    resetRRuleAll ({ commit }) {
+      ['Count', 'Until', 'Month', 'MonthDay', 'Freq', 'Interval', 'Pos', 'WeekDay'].forEach(key => commit('unset' + key))
+      commit('unsetSelectDays')
+    },
+    importRRule ({ commit, getters }, rruleString) {
+      commit('unsetSelectDays')
       commit('parseString', rruleString)
+      getters.options.byweekday?.forEach(d => commit('toggleSelectDays', d.weekday))
     }
   }
 }

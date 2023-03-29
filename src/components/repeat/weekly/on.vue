@@ -55,13 +55,6 @@ export default {
       this.toggleSelectDays(d)
       this.updateRRule({'WeekDay': this.selectDays})
     }
-  },
-  created() {
-    if(this.initFromString) {
-      this.options.byweekday?.forEach(d => this.toggleSelectDays(d.weekday))
-    } else {
-      this.updateRRule({'WeekDay': this.selectDays})
-    }
   }
 }
 </script>
