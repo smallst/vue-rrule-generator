@@ -30,47 +30,39 @@ export default {
     After,
     OnDate
   },
-  data () {
-    return {
-      endState: 'After'
-    }
-  },
   computed: {
     ...mapGetters('rruleGenerator', [
       'initFromString',
       'options'
     ]),
+    endState: {
+      get () {
+        if(this.options.until) {
+          return 'OnDate'
+        } else if(this.options.count) {
+          return 'After'
+        } else {
+          return 'Never'
+        }
+      },
+      set (val) {
+        this.resetRRule(['Count', 'Until'])
+        if(val === 'OnDate') {
+          this.updateRRule({Until: new Date()})
+        } else if(val === 'After') {
+          this.updateRRule({Count: 1})
+        }
+      }
+    },
     endOptions () {
       return ['Never', 'After', 'OnDate']
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
-      'resetRRule'
-    ])
-  },
-  created () {
-    if(this.initFromString) {
-      if(this.options.until) {
-        this.endState = 'OnDate'
-      } else if(this.options.count) {
-        this.endState = 'After'
-      } else {
-        this.endState = 'Never'
-      }
-    }
-  },
-  watch: {
-    endState (val, ov) {
-      switch(ov) {
-          case 'After':
-          this.resetRRule(['Count'])
-          break;
-          case 'OnDate':
-          this.resetRRule(['Until'])
-          break
-      }
-    }
+      'resetRRule',
+      'updateRRule'
+    ]),
   }
 }
 </script>

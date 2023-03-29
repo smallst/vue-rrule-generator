@@ -13,35 +13,24 @@
 import {mapActions, mapGetters} from 'vuex'
 export default {
   name: 'EndAfter',
-  data () {
-    return {
-      count: 1,
-    }
-  },
   computed: {
     ...mapGetters('rruleGenerator', [
       'options',
       'initFromString'
-    ])
+    ]),
+    count: {
+      get () {
+        return this.options.count || 1
+      },
+      set (val) {
+        this.updateRRule({Count: val})
+      },
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
     ])
-  },
-  watch: {
-    count (val) {
-      this.updateRRule({Count: val})
-    }
-  },
-  created () {
-    if(this.initFromString) {
-      this.count = this.options.count
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
