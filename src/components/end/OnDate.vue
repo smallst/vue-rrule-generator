@@ -22,7 +22,6 @@ export default {
     },
     ...mapGetters('rruleGenerator', [
       'options',
-      'initFromString'
     ])
   },
   methods: {

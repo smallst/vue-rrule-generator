@@ -37,7 +37,6 @@ export default {
   },
   computed: {
     ...mapGetters('rruleGenerator', [
-      'initFromString',
       'options'
     ]),
     month: {

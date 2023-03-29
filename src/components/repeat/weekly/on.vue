@@ -36,9 +36,7 @@ export default {
   },
   computed: {
     ...mapGetters('rruleGenerator', [
-      'selectDays',
-      'initFromString',
-      'options'
+      'selectDays'
     ]),
     weekDays () {
       return WEEKDAYS

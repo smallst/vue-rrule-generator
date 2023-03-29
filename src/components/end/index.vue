@@ -32,7 +32,6 @@ export default {
   },
   computed: {
     ...mapGetters('rruleGenerator', [
-      'initFromString',
       'options'
     ]),
     endState: {
@@ -66,7 +65,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

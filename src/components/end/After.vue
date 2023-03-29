@@ -16,7 +16,6 @@ export default {
   computed: {
     ...mapGetters('rruleGenerator', [
       'options',
-      'initFromString'
     ]),
     count: {
       get () {

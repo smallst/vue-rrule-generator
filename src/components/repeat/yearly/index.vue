@@ -27,7 +27,6 @@ import On from './on.vue'
 import OnThe from './onthe.vue'
 
 import { mapActions, mapGetters } from 'vuex'
-import {RRule} from 'rrule'
 export default {
   name: 'YearlyIndex',
   props: {
@@ -37,7 +36,6 @@ export default {
   },
   computed: {
     ...mapGetters('rruleGenerator', [
-      'initFromString',
       'options'
     ]),
     yearlyState: {

@@ -22,7 +22,6 @@ export default {
   },
   computed: {
     ...mapGetters('rruleGenerator', [
-      'initFromString',
       'options'
     ]),
     day: {

@@ -16,25 +16,12 @@
 import Interval from '../interval.vue'
 import On from './on.vue'
 
-import { mapActions, mapGetters } from 'vuex'
-import { RRule } from 'rrule'
 export default {
   name: 'WeeklyIndex',
   props: {
   },
   components: {
     Interval, On
-  },
-  computed: {
-    ...mapGetters('rruleGenerator', [
-      'initFromString'
-    ]),
-  },
-  methods: {
-    ...mapActions('rruleGenerator', [
-      'updateRRule',
-      'resetRRule'
-    ])
   }
 }
 </script>
