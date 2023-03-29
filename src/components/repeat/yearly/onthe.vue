@@ -40,6 +40,60 @@ export default {
       'initFromString',
       'options'
     ]),
+    month: {
+      get() {
+        return this.options.bymonth - 1 || 0
+      },
+      set (val) {
+        this.updateRRule({Month: val + 1})
+      }
+    },
+    day: {
+      get() {
+        const weekday = this.options.byweekday
+        if(Array.isArray(weekday)) {
+          switch(weekday.length) {
+            case 7: return 7
+            case 5: return 8
+            case 2: return 9
+            case 1: return weekday[0].weekday
+          }
+        }
+        return weekday
+      },
+      set(val) {
+        let weekday = val;
+        switch(val) {
+          case 7:
+            weekday = [0, 1, 2, 3, 4, 5, 6]
+            break
+          case 8:
+            weekday = [0, 1, 2, 3, 4]
+            break
+          case 9:
+            weekday = [5, 6]
+            break
+        }
+        this.updateRRule({WeekDay: weekday})
+      }
+    },
+    pos: {
+      get() {
+        const pos = this.options.bysetpos
+        if(pos === -1) {
+          return 4
+        } else {
+          return pos - 1
+        }
+      },
+      set (val) {
+        let pos = val + 1
+        if (pos === 5) {
+          pos = -1
+        }
+        this.updateRRule({Pos: pos})
+      }
+    },
     months () {
       return MONTHS
     },
@@ -54,100 +108,12 @@ export default {
         'Fourth',
         'Last'
       ]
-    },
-    bymonth () {
-      return this.month + 1
-    },
-    bysetpos () {
-      return this.pos + 1
-    }
-  },
-  data () {
-    return {
-      month: 0,
-      day: 1,
-      pos: 0,
-      initing: false
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
     ]),
-    init () {
-      this.initing = true
-      this.month = this.options.bymonth - 1
-      const weekday = this.options.byweekday
-      if(Array.isArray(weekday)) {
-        switch(weekday.length) {
-          case 7: this.day = 7; break;
-          case 5: this.day = 8; break;
-          case 2: this.day = 9; break;
-          case 1: this.day = weekday[0].weekday
-        }
-      }
-      const pos = this.options.bysetpos
-      if(pos === -1) {
-        this.pos = 4
-      } else {
-        this.pos = pos -1
-      }
-
-      this.$nextTick(() => this.initing = false)
-    }
-  },
-  created () {
-    if(this.state === 'onthe') {
-      if (this.initFromString) {
-        this.init()
-      }
-    }
-  },
-  watch: {
-    state (val) {
-      if(val == 'onthe') {
-        if (this.initFromString) {
-          this.init()
-        } else {
-          this.updateRRule({Month: this.bymonth, WeekDay: this.day, Pos: this.bysetpos})
-        }
-      }
-    },
-    month (val) {
-      if(!this.initing) {
-        this.updateRRule({Month: val + 1})
-      }
-    },
-    day (val) {
-      if(!this.initing) {
-      let weekday = val;
-      switch(val) {
-        case 7:
-          weekday = [0, 1, 2, 3, 4, 5, 6]
-          break
-        case 8:
-          weekday = [0, 1, 2, 3, 4]
-          break
-        case 9:
-          weekday = [5, 6]
-          break
-      }
-      this.updateRRule({WeekDay: weekday})
-      }
-    },
-    pos (val) {
-      if(!this.initing) {
-      let pos = val + 1
-      if (pos === 5) {
-        pos = -1
-      }
-      this.updateRRule({Pos: pos})
-      }
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

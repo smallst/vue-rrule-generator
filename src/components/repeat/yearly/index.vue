@@ -35,11 +35,28 @@ export default {
   components: {
     On, OnThe, Interval
   },
-    computed: {
+  computed: {
     ...mapGetters('rruleGenerator', [
       'initFromString',
       'options'
-    ])
+    ]),
+    yearlyState: {
+      get () {
+        if(this.options.bysetpos) {
+          return 'onthe'
+        } else {
+          return 'on'
+        }
+      },
+      set (val) {
+        this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos'])
+        if(val === 'on') {
+          this.updateRRule({ Month: 0, MonthDay: 1 })
+        } else {
+          this.updateRRule({ Month: 1, WeekDay: 0, Pos: 1 })
+        }
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', [
@@ -47,37 +64,5 @@ export default {
       'resetRRule'
     ])
   },
-  data () {
-    return {
-      yearlyState: 'on'
-    }
-  },
-  watch: {
-    yearlyState (val, ov) {
-      switch(ov) {
-        case 'on':
-          this.resetRRule(['Month', 'MonthDay'])
-          break;
-        case 'onthe':
-          this.resetRRule(['Month', 'WeekDay', 'Pos'])
-          break
-      }
-    }
-  },
-  created() {
-    if(this.initFromString) {
-      if(this.options.bymonthday) {
-        this.yearlyState = 'on'
-      } else {
-        this.yearlyState = 'onthe'
-      }
-    } else {
-      this.updateRRule({Freq: RRule.YEARLY})
-    }
-  }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

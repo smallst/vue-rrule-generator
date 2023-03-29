@@ -33,6 +33,25 @@ export default {
       'initFromString',
       'options'
     ]),
+    month: {
+      get () {
+        if(this.options.bymonth) {
+          return this.options.bymonth - 1
+        }
+        return 0
+      },
+      set (val) {
+        this.updateRRule({Month: val+1})
+      }
+    },
+    day: {
+      get () {
+        return this.options.bymonthday || 1
+      },
+      set (val) {
+        this.updateRRule({MonthDay: val})
+      }
+    },
     months () {
       return MONTHS
     },
@@ -43,57 +62,10 @@ export default {
       return moment(MONTHS[this.month], 'MMM').daysInMonth()
     },
   },
-  data () {
-    return {
-      initing: false,
-      month: 0,
-      day: 1
-    }
-  },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
-    ]),
-    init () {
-      this.initing = true
-      this.day = this.options.bymonthday
-      this.month = this.options.bymonth - 1
-      this.$nextTick(() => this.initing = false)
-    }
-  },
-  watch: {
-    state (val) {
-      if(val == 'on') {
-        if (this.initFromString) {
-          this.init()
-        } else {
-          this.updateRRule({Month: this.bymonth, MonthDay: this.day})
-        }
-      }
-    },
-    month (val) {
-      if(!this.initing){
-        this.updateRRule({Month: val+1})
-      }
-    },
-    day (val) {
-      if(!this.initing){
-        this.updateRRule({MonthDay: val})
-      }
-    }
-  },
-  created() {
-    if(this.state === 'on') {
-      if(this.initFromString) {
-        this.init()
-      } else {
-        this.updateRRule({Month: this.bymonth, MonthDay: this.day})
-      }
-    }
+    ])
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
