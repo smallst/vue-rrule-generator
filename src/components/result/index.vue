@@ -15,15 +15,11 @@ export default {
   name: 'ResultIndex',
   props: {
   },
-computed: {
-  ...mapGetters('rruleGenerator', [
-    'ruleString',
-    'ruleText',
-  ])
-}
+  computed: {
+    ...mapGetters('rruleGenerator', [
+      'ruleString',
+      'ruleText',
+    ])
+  }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

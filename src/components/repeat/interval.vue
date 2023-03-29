@@ -25,34 +25,21 @@ export default {
     ...mapGetters('rruleGenerator', [
       'initFromString',
       'options'
-    ])
+    ]),
+    interval: {
+      get () {
+        return this.options.interval || 1
+      },
+      set (val) {
+        this.updateRRule({Interval: val})
+      }
+    }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule',
       'resetRRule'
     ])
-  },
-  data () {
-    return {
-      interval: 1
-    }
-  },
-  watch: {
-    interval (val) {
-      this.updateRRule({Interval: val})
-    }
-  },
-  created() {
-    if(this.initFromString) {
-      this.interval = this.options.interval
-    } else {
-      this.updateRRule({Interval: this.interval})
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

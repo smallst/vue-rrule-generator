@@ -38,47 +38,51 @@ export default {
     Yearly, Monthly, Weekly, Daily,
     Hourly, Minutely, Secondly
   },
-  data () {
-    return {
-      repeatState: 'Weekly'
-    }
-  },
   computed: {
     ...mapGetters('rruleGenerator', [
       'options'
     ]),
+    repeatState: {
+      get () {
+        return this.repeatOptions[this.options.freq]
+      },
+      set (val) {
+        this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos'])
+        console.log('set repeat sate', val)
+        switch(val) {
+          case 'Yearly':
+            this.updateRRule({ Freq: RRule.YEARLY, Month: 0, MonthDay: 1 })
+            break
+          case 'Monthly':
+            this.updateRRule({ Freq: RRule.MONTHLY, MonthDay: 1 })
+            break
+          case 'Weekly':
+            this.updateRRule({ Freq: RRule.WEEKLY, WeekDay: [] })
+            break
+          case 'Daily':
+            this.updateRRule({ Freq: RRule.DAILY })
+            break
+          case 'Hourly':
+            this.updateRRule({ Freq: RRule.HOURLY })
+            break
+          case 'Minutely':
+            this.updateRRule({ Freq: RRule.MINUTELY })
+            break
+          case 'Secondly':
+            this.updateRRule({ Freq: RRule.SECONDLY })
+            break
+        }
+      }
+    },
     repeatOptions () {
       return ['Yearly', 'Monthly', 'Weekly', 'Daily', 'Hourly', 'Minutely', 'Secondly']
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
-      'resetRRule'
+      'resetRRule',
+      'updateRRule'
     ])
   },
-  created () {
-    this.repeatState = this.repeatOptions[this.options.freq]
-  },
-  watch: {
-    repeatState (val, ov) {
-      switch(ov) {
-        case 'Yearly':
-          this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos'])
-          break
-        case 'Monthly':
-          this.resetRRule(['MonthDay', 'WeekDay', 'Pos'])
-          break
-        case 'Weekly':
-          this.resetRRule(['WeekDay'])
-          break
-        case 'Daily':
-          break
-      }
-    }
-  }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

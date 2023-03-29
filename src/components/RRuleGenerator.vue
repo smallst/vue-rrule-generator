@@ -32,6 +32,10 @@ export default {
     rrule: {
       type: String,
       default: ''
+    },
+    resetRRule: {
+      type: Boolean
+      // signal, watch change to reset rrule
     }
   },
   components: {
@@ -54,6 +58,7 @@ export default {
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule',
+      'resetRRuleAll',
       'importRRule'
     ]),
   },
@@ -66,6 +71,12 @@ export default {
     }
   },
   watch: {
+    rrule (v) {
+        this.importRRule(v)
+    },
+    resetRRule (v) {
+      this.resetRRuleAll()
+    },
     start (v) {
       this.updateRRule({Start: v})
     }

@@ -56,14 +56,11 @@ export default {
     setFreq (state,  freq) {
       state.RRule = { ...state.RRule, freq: freq}
     },
-    unsetFreq (state) {
-      state.RRule = { ...state.RRule, freq: RRule.WEEKLY}
-    },
     setInterval (state, interval) {
       state.RRule = { ...state.RRule, interval: interval}
     },
     unsetInterval (state) {
-      state.RRule = { ...state.RRule, interval: undefined}
+      state.RRule = { ...state.RRule, interval: 1}
     },
     setPos (state, pos) {
       state.RRule = { ...state.RRule, bysetpos: pos }
@@ -154,8 +151,8 @@ export default {
       updates.forEach(key => commit('unset' + key))
     },
     resetRRuleAll ({ commit }) {
-      ['Count', 'Until', 'Month', 'MonthDay', 'Freq', 'Interval', 'Pos', 'WeekDay'].forEach(key => commit('unset' + key))
-      commit('unsetSelectDays')
+      ['Until', 'Month', 'MonthDay', 'Pos', 'WeekDay', 'SelectDays'].forEach(key => commit('unset' + key))
+      commit('setCount', 1)
     },
     importRRule ({ commit, getters }, rruleString) {
       commit('unsetSelectDays')
