@@ -48,7 +48,6 @@ export default {
       },
       set (val) {
         this.resetRRule(['Month', 'MonthDay', 'WeekDay', 'Pos'])
-        console.log('set repeat sate', val)
         switch(val) {
           case 'Yearly':
             this.updateRRule({ Freq: RRule.YEARLY, Month: 0, MonthDay: 1 })
