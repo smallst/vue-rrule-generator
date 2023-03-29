@@ -24,42 +24,20 @@ export default {
     ...mapGetters('rruleGenerator', [
       'initFromString',
       'options'
-    ])
-  },
-  data () {
-    return {
-      day: 1
+    ]),
+    day: {
+      get () {
+        return this.options.bymonthday
+      },
+      set (val) {
+        this.updateRRule({MonthDay: val})
+      }
     }
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule'
     ])
-  },
-  watch: {
-    state (val) {
-      if(val == 'on') {
-        if(this.initFromString) {
-          this.day = this.options.bymonthday
-        } else {
-          this.updateRRule({MonthDay: this.day})
-        }
-      }
-    },
-    day (val) {
-      this.updateRRule({MonthDay: val})
-    }
-  },
-  created() {
-    if(this.initFromString) {
-      this.day = this.options.bymonthday
-    } else {
-      this.updateRRule({MonthDay: this.day})
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

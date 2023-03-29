@@ -39,45 +39,30 @@ export default {
     ...mapGetters('rruleGenerator', [
       'initFromString',
       'options'
-    ])
+    ]),
+    monthlyState: {
+      get () {
+        if(this.options.bymonthday) {
+          return 'on'
+        } else {
+          return 'onthe'
+        }
+      },
+      set (val) {
+       this.resetRRule(['MonthDay', 'WeekDay', 'Pos'])
+        if(val === 'on') {
+          this.updateRRule({MonthDay: 1})
+        } else {
+          this.updateRRule({WeekDay: 1, Pos: 1})
+        }
+      }
+    },
   },
   methods: {
     ...mapActions('rruleGenerator', [
       'updateRRule',
       'resetRRule'
     ])
-  },
-  data () {
-    return {
-      monthlyState: 'on'
-    }
-  },
-  watch: {
-    monthlyState (val, ov) {
-      switch(ov) {
-        case 'on':
-          this.resetRRule(['MonthDay'])
-          break;
-        case 'onthe':
-          this.resetRRule(['WeekDay', 'Pos'])
-          break
-      }
-    }
-  },
-  created() {
-    if(this.initFromString) {
-      if(this.options.bymonthday) {
-        this.monthlyState = 'on'
-      } else {
-        this.monthlyState = 'onthe'
-      }
-    } else {
-      this.updateRRule({Freq: RRule.MONTHLY})
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
