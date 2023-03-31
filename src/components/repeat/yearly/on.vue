@@ -19,7 +19,6 @@
 <script>
 import { MONTHS } from '@/constants.js'
 
-import moment from 'moment'
 import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'YearlyOn',
@@ -58,7 +57,8 @@ export default {
       return this.month + 1
     },
     daysInMonth () {
-      return moment(MONTHS[this.month], 'MMM').daysInMonth()
+      const year = this.options.dtstart.getFullYear()
+      return new Date(year, (this.month + 1), 0).getDate();
     },
   },
   methods: {

@@ -18,7 +18,7 @@ export default {
   computed: {
     startString () {
       return `${this.start.toLocaleDateString()} ${this.start.toLocaleTimeString()}`
-      }
+    }
   }
 }
 </script>
