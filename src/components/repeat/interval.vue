@@ -4,7 +4,7 @@
       Every
     </div>
     <div class="col-sm-2">
-      <input class="form-control" name="interval" type="number" min="1" v-model="interval" />
+      <input class="form-control" name="interval" type="number" min="1" v-model.number="interval" />
     </div>
     <div class="col-sm-2">
       {{ unit }}
