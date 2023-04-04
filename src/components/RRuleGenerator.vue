@@ -19,7 +19,7 @@ import End from './end/index.vue'
 import Result from './result/index.vue'
 
 import { RRule } from 'rrule'
-import {mapActions} from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'RRuleGenerator',
   props: {
@@ -45,14 +45,14 @@ export default {
     Result
   },
   computed: {
+    ...mapGetters({
+      storeRule: 'rruleGenerator/options'
+    }),
     showStart () {
       return this.option?.showStart
     },
     showResult () {
       return this.option?.showResult
-    },
-    storeRule () {
-      return this.$store.rruleGenerator.state.RRule
     }
   },
   methods: {

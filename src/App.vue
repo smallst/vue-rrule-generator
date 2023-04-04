@@ -6,11 +6,17 @@
     <rrule-generator class="generator" :start="new Date()" :option="options"
                      :rrule="rule" :resetRRule="resetRRule"
     />
+    <div class="preview">
+      <div v-for="d in top6" :key="d">
+        {{ d }}
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import RRuleGenerator from './components/RRuleGenerator.vue'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'App',
@@ -18,11 +24,18 @@ export default {
     'rrule-generator': RRuleGenerator
   },
   computed: {
+    ...mapGetters({
+      rrule: 'rruleGenerator/rule'
+    }),
     options() {
       return {
         showStart: true,
         showResult: true,
       }
+    },
+    top6() {
+      return []
+      return this.rrule.all((date, i) => i < 6)
     }
   },
   data () {
