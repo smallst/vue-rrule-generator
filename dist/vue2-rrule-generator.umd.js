@@ -11,7 +11,7 @@
 return /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 6647:
+/***/ 3449:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -343,16 +343,16 @@ var yearlyvue_type_template_id_3afcdbc8_render = function render() {
 };
 var yearlyvue_type_template_id_3afcdbc8_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/interval.vue?vue&type=template&id=2b136566&
-var intervalvue_type_template_id_2b136566_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/repeat/interval.vue?vue&type=template&id=6fb7ff8c&
+var intervalvue_type_template_id_6fb7ff8c_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
     staticClass: "repeat-interval col-sm-10 row d-flex align-items-sm-center"
   }, [_c('div', {
-    staticClass: "col-md-1 col-sm-2"
+    staticClass: "col-md-2 col-sm-2"
   }, [_vm._v(" Every ")]), _c('div', {
-    staticClass: "col-md-3 col-sm-4"
+    staticClass: "col-md-4 col-sm-4"
   }, [_c('input', {
     directives: [{
       name: "model",
@@ -382,10 +382,10 @@ var intervalvue_type_template_id_2b136566_render = function render() {
       }
     }
   })]), _c('div', {
-    staticClass: "col-md-1 col-sm-2"
+    staticClass: "col-md-2 col-sm-2"
   }, [_vm._v(" " + _vm._s(_vm.unit) + " ")])]);
 };
-var intervalvue_type_template_id_2b136566_staticRenderFns = [];
+var intervalvue_type_template_id_6fb7ff8c_staticRenderFns = [];
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
 var esm_typeof = __webpack_require__(8398);
@@ -1580,8 +1580,8 @@ var index = {
 ;
 var interval_component = normalizeComponent(
   repeat_intervalvue_type_script_lang_js_,
-  intervalvue_type_template_id_2b136566_render,
-  intervalvue_type_template_id_2b136566_staticRenderFns,
+  intervalvue_type_template_id_6fb7ff8c_render,
+  intervalvue_type_template_id_6fb7ff8c_staticRenderFns,
   false,
   null,
   null,
@@ -13307,7 +13307,7 @@ if (typeof window !== 'undefined') {
 /* harmony default export */ var setPublicPath = (null);
 
 ;// CONCATENATED MODULE: ./src/install.js
-var RRuleGenerator = (__webpack_require__(6647)/* ["default"] */ .Z);
+var RRuleGenerator = (__webpack_require__(3449)/* ["default"] */ .Z);
 var rruleGeneratorModule = (__webpack_require__(1139)/* ["default"] */ .Z);
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
